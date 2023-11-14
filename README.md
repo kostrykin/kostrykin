@@ -1,5 +1,3 @@
-### Hi there 👋
-
 <!-- https://github.com/FortAwesome/Font-Awesome -->
 
 <p><img src="https://github.com/kostrykin/kostrykin/assets/6557139/c83f927e-d587-4b86-a08f-0981efe06b53" width="20" align="center">
