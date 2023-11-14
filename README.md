@@ -14,3 +14,6 @@ https://hub.docker.com/u/kostrykin</p>
 
 <p><img src="https://github.com/kostrykin/kostrykin/assets/6557139/874339d2-3929-4551-a45f-d0739208d295" width="20" align="center">
 https://www.instagram.com/l.kostrykin</p>
+
+<p><img src="https://github.com/kostrykin/kostrykin/assets/6557139/603bc833-e399-4586-8557-d94370a8fd24" width="20" align="center">
+https://kostrykin.com/publications</p>
