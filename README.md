@@ -20,7 +20,7 @@ https://hub.docker.com/u/kostrykin</p>
 
 ---
 
-#### Recent contributions to the [#usegalaxy](https://github.com/topics/usegalaxy) community:
+#### Recent contributions to [#usegalaxy](https://github.com/topics/usegalaxy):
 
 ![](https://kostrykin.github.io/galaxy-community-activities/report/assets/images/contributiongraphs/kostrykin.png)
 <p align="right"><sup><sub>Generated using https://github.com/kostrykin/galaxy-community-activities</sub></sup></p>
