@@ -1,10 +1,9 @@
 name: kostrykin.com
 owner: Dr. Leonid Kostrykin
 
+plugins:
+  - jekyll-redirect-from
+
 #include:
 #  - communities
 #  - contributors
-
-#defaults:
-#  - scope:
-#      path: "assets"

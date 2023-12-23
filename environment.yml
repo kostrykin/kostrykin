@@ -1,0 +1,8 @@
+name: kostrykin.com
+channels:
+  - conda-forge
+dependencies:
+  - c-compiler
+  - compilers
+  - cxx-compiler
+  - ruby
