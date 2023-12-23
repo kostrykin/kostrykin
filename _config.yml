@@ -5,6 +5,9 @@ collections:
   publications:
     output: true
     permalink: /:collection/:title.bib
+  notes:
+    output: true
+    permalink: /:collection/notes/:title
 
 defaults:
   - scope:
@@ -12,3 +15,8 @@ defaults:
       type: publications
     values:
       layout: bibtex
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: notes

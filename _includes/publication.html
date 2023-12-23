@@ -58,8 +58,9 @@
     <li class="publication-attachment"><a href="{{ attachment.url }}">[{{ attachment.name }}]</a></li>
     {% endfor %}
 
-    {% if include.publication.notes %}
-    <li class="publication-attachment"><a href="notes/{{ include.publication.slug }}">[notes]</a></li>
+    {% assign notes = site.notes | where: "slug", include.publication.slug | first %}
+    {% if notes %}
+    <li class="publication-attachment"><a href="{{ notes.url }}">[notes]</a></li>
     {% endif %}
 
     <li class="publication-attachment"><a href="{{ include.publication.url }}">[cite]</a></li>

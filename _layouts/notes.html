@@ -1,0 +1,41 @@
+---
+title: Publication Notes
+nav_publications: active
+layout: default
+---
+
+{% assign publication = site.publications | where: "slug", page.slug | first %}
+
+<link rel="stylesheet" type="text/css" href="/assets/publications.css?{{ timestamp }}">
+
+<a href="/publications">&laquo; Back to list</a>
+
+<ul class="publications">
+
+    <li class="publication">
+
+        {% include publication.html publication=publication %}
+
+    </li>
+
+</ul>
+
+<ul class="notes">{% for note in page.notes %}
+
+    <li class="note" id="note-{{ note.pk }}">
+
+        <div class="note-link"><a name="note-{{ note.pk }}" href="{{ url }}#note-{{ note.pk }}">&para;</a></div>
+
+        {% if note.reference %}
+        <div class="note-reference">Note {{ forloop.index }}, regarding: {{ note.reference }}</div>
+        {% else %}
+        <div class="note-reference">Note {{ forloop.index }}</div>
+        {% endif %}
+
+        <div class="note-date">{{ note.date }}</div>
+
+        <div class="note-text">{{ note.text }}</div>
+
+    </li>
+
+{% endfor %}</ul>
