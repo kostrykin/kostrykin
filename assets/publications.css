@@ -1,0 +1,115 @@
+ul.publications,
+ul.notes {
+    padding: 0;
+}
+
+ul.notes {
+    margin-top: 3em;
+}
+
+ul.publications li.publication,
+ul.notes li.note {
+    list-style-type: none;
+    margin-top: 0.66em;
+    margin-bottom: 0.8em;
+}
+
+ul.notes li.note {
+    margin-top: 3em;
+}
+
+ul.publications li.publication a,
+ul.notes li.note a {
+}
+
+ul.publications li.publication .publication-authors .publication-author:not(:last-child)::after {
+    content: ', ';
+}
+
+ul.publications li.publication .publication-title {
+}
+
+ul.publications li.publication .publication-journal-name {
+    font-style: italic;
+}
+
+ul.publications li.publication .publication-proceedings-title {
+    font-style: italic;
+}
+
+ul.publications li.publication .publication-in-press {
+    font-style: italic;
+}
+
+ul.publications li.publication .publication-preprint-details {
+    font-style: italic;
+}
+
+ul.publications li.publication .publication-thesis-repository {
+    font-style: italic;
+}
+
+ul.publications li.publication ul.publication-attachments {
+    padding: 0;
+    display: inline;
+}
+
+ul.publications li.publication ul.publication-attachments li.publication-attachment {
+    list-style-type: none;
+    display: inline;
+}
+
+ul.notes li.note .note-link {
+    position: relative;
+    display: inline-block;
+}
+
+ul.notes li.note .note-link a {
+    position: absolute;
+    right: 0;
+    padding-right: 0.4em;
+    opacity: 0;
+    text-decoration: none;
+    font-size: 130%;
+}
+
+ul.notes li.note:target {
+    animation: target-fade-out 3s;
+}
+
+@keyframes target-fade-out {
+    0% {
+        background-color: rgba(255, 255, 0, 0.3);
+        outline: 0.5em rgba(255, 255, 0, 0.3) solid;
+    }
+    100% {
+        background-color: rgba(255, 255, 0, 0);
+        outline: 0.5em rgba(255, 255, 0, 0) solid;
+    }
+}
+
+ul.notes li.note:hover .note-link a {
+    opacity: 1;
+}
+
+ul.notes li.note .note-link a:hover {
+    opacity: 1;
+}
+
+ul.notes li.note .note-reference {
+    font-weight: bold;
+}
+
+ul.notes li.note .note-date {
+    font-style: italic;
+}
+
+ul.notes li.note .note-text {
+    margin-top: 0.66em;
+    line-height: 1.5;
+}
+
+ul.notes li.note .note-text p {
+    margin-top: 0.33em;
+    margin-bottom: 0.33em;
+}

@@ -1,2 +1,9 @@
-kostrykin:
+lkostrykin:
   name: L. Kostrykin
+  highlight: true
+
+cschnörr:
+  name: C. Schnörr
+
+krohr:
+  name: K. Rohr

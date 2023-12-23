@@ -1,0 +1,66 @@
+<span class="publication-authors">
+    {% for author in include.publication.authors %}
+        {%- assign author_info = site.data.authors[author] -%}
+        {%- if author_info.highlight -%}
+            <b>{{ author_info.name -}}</b>
+        {%- else %}
+            {{ author_info.name -}}
+        {%- endif -%}
+        {%- if forloop.last == false %},{% endif %}
+        {% if forloop.rindex == 2 %}and{% endif %}
+    {% endfor %}
+</span>
+<span class="publication-title">&ldquo;{{ include.publication.title }}<span class="nospace">,</span>&rdquo;</span>
+{% if include.publication.conference %}
+
+    in
+
+    <span class="publication-proceedings-title">{{ include.publication.conference.proceedings }} ({{ include.publication.conference.name }} {{ include.publication.year }}),</span>
+
+    <span class="publication-conference-details">{{ include.publication.conference.venue }},</span>
+
+{% elsif include.publication.journalarticle %}
+
+    <span class="publication-journal-name">{{ include.publication.journalarticle.journal_name }},</span>
+
+    {% if include.publication.journalarticle.volume %}
+
+        <span class="publication-journal-volume">vol. {{ include.publication.journalarticle.volume }}{% if include.publication.journalarticle.number %}({{ include.publication.journalarticle.number }}){% endif %},</span>
+
+    {% endif %}
+
+    {% if include.publication.journalarticle.is_in_press %}<span class="publication-in-press">in press,</span>{% endif %}
+
+{% elsif include.publication.preprint %}
+
+    <span class="publication-preprint-details">{{ include.publication.preprint.preprint_server }} preprint {{ include.publication.preprint.preprint_id }},</span>
+
+{% elsif include.publication.thesis %}
+
+    <span class="publication-thesis-type">{{ include.publication.thesis.thesis_type }},</span>
+
+    <span class="publication-thesis-repository">{{ include.publication.thesis.repository }},</span>
+
+{% endif %}
+
+{% if include.publication.pages %}
+
+    <span class="publication-pages">{{ include.publication.pages }},</span>
+
+{% endif %}
+
+<span class="publication-year">{{ include.publication.year }}.</span>
+
+<ul class="publication-attachments">
+
+    {% for attachment in include.publication.attachments %}
+    <li class="publication-attachment"><a href="{{ attachment.url }}">[{{ attachment.name }}]</a></li>
+    {% endfor %}
+
+    {% if include.publication.notes %}
+    <li class="publication-attachment"><a href="notes/{{ include.publication.id }}">[notes]</a></li>
+    {% endif %}
+
+    <li class="publication-attachment"><a href="cite/{{ include.publication.id }}">[cite]</a></li>
+
+</ul>

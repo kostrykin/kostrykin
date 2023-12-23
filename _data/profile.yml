@@ -5,6 +5,7 @@ affiliations:
     positions:
       - title: ELIXIR Germany Officer of the Heidelberg Center for Human Bioinformatics (HD-HuB)
         year_started: 2023
+        year_ended: 2023
     projects:
       - title: Development and deployment of image analysis tools for Galaxy Europe and Bioconda
 
@@ -46,7 +47,7 @@ presentations:
 
   - institution: Next Generation Bioimage Analysis Workflows Hackathon
     format: invited talk
-    presenter: kostrykin
+    presenter: lkostrykin
     title: Workflows for Image Analysis using Galaxy
     month: 11
     year: 2023
@@ -54,21 +55,21 @@ presentations:
 
   - institution: DAGM German Conference on Pattern Recognition
     format: poster
-    presenter: kostrykin
+    presenter: lkostrykin
     title: Superadditivity and Convex Optimization for Globally Optimal Cell Segmentation using Deformable Shape Models
     month: 9
     year: 2023
 
   - institution: International Conference on Control, Automation and Systems
     format: talk
-    presenter: kostrykin
+    presenter: lkostrykin
     title: Globally Optimal and Scalable Video Image Stitching for Robotic Inspection of Electric Generators
     month: 10
     year: 2021
 
   - institution: IEEE International Symposium on Biomedical Imaging
     format: talk
-    presenter: kostrykin
+    presenter: lkostrykin
     title: Segmentation of Cell Nuclei using Intensity-based Model Fitting and Sequential Convex Programming
     month: 4
     year: 2018

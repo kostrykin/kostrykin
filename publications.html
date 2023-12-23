@@ -1,0 +1,23 @@
+---
+title: Publications
+nav_publications: active
+layout: default
+---
+
+<link rel="stylesheet" type="text/css" href="/assets/publications.css?{{ timestamp }}">
+
+{% assign years = site.data.publications | group_by: "year" | sort: "name" | reverse %}
+<ul class="publications">{% for publications in years %}
+
+    {% assign publications_in_year = publications.items | sort: "month" | reverse %}
+    {% for publication in publications_in_year %}
+
+        <li class="publication">
+
+            {% include publication.html publication=publication %}
+
+        </li>
+
+    {% endfor %}
+
+{% endfor %}</ul>
