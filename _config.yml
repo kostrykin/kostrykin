@@ -1,0 +1,10 @@
+name: kostrykin.com
+owner: Dr. Leonid Kostrykin
+
+#include:
+#  - communities
+#  - contributors
+
+#defaults:
+#  - scope:
+#      path: "assets"

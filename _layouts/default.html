@@ -1,0 +1,57 @@
+{% assign timestamp = site.time | date: "%U" %}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<meta name="theme-color" content="#641E1E" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#641E1E" media="(prefers-color-scheme: dark)">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>kostrykin.com | {{ page.title }}</title>
+
+<link rel="stylesheet" type="text/css" href="assets/base.css?{{ timestamp }}">
+
+<link rel="stylesheet" href="assets/jqmath/jqmath-0.4.3.min.css">
+<script src="assets/jqmath/jqmath-vanilla.min.js"></script>
+
+</head>
+<body>
+
+<div id="header">
+
+    <ul id="navigation">
+
+        <a href="profile"><li class="nav nav-{{ page.nav_profile }}">Profile</li></a>
+        <a href="publications"><li class="nav nav-{{ page.nav_publications }}">Publications</li></a>
+        <a href="photography"><li class="nav nav-{{ page.nav_photography }}">Photography</li></a>
+        <a href="contact"><li class="nav nav-{{ page.nav_contact }}">Contact</li></a>
+
+    </ul>
+
+</div>
+
+<div id="content">
+
+    {{ content }}
+
+</div>
+
+<div id="footer-spacer"></div>
+<div id="footer">
+
+    <div class="copyright">
+    <b>{{ site.owner }} &copy; 2020&ndash;{{ site.time | date: "%Y" }}</b><br>
+    URL: {{ page.url }}
+    </div>
+
+    <div class="licenses">
+    This web page uses <a href="assets/jqmath/LICENSE.txt">jqMath-vanilla</a> for rendering formulas.
+    </div>
+
+</div>
+
+</body>
+</html>
