@@ -1,0 +1,79 @@
+#photo {
+    margin-bottom: 1cm;
+}
+
+#photo img {
+    max-width: 10cm;
+    width: 100%;
+    filter: drop-shadow(0 2mm 2mm rgba(0%, 0%, 0%, 0.2));
+}
+
+.introduction {
+    font-size: 14pt;
+}
+
+@media (min-width: 35cm) {
+
+    #content {
+        margin-left: 11cm;
+    }
+
+    #photo {
+        position: absolute;
+        left: 5mm;
+    }
+
+}
+
+ul.affiliations,
+ul.presentations,
+ul.instruction-experiences {
+    padding: 0;
+}
+
+ul.affiliations li.affiliation,
+ul.presentations li.presentation,
+ul.instruction-experiences li.instruction-experience {
+    list-style-type: none;
+    margin-top: 0.66em;
+    margin-bottom: 0.66em;
+}
+
+ul.presentations li.presentation .presentation-format {
+    font-weight: bold;
+}
+
+ul.presentations li.presentation .presentation-institution {
+    font-style: italic;
+}
+
+ul.affiliations li.affiliation > span:first-child {
+    font-weight: bold;
+}
+
+ul.affiliations li.affiliation ul.affiliation-positions {
+    display: inline;
+    padding: 0;
+}
+
+ul.affiliations li.affiliation ul.affiliation-positions li.affiliation-position {
+    display: inline;
+    list-style-type: none;
+}
+
+ul.affiliations li.affiliation ul.affiliation-positions li.affiliation-position .affiliation-position-title {
+    font-style: italic;
+}
+
+ul.affiliations li.affiliation ul.affiliation-projects li.affiliation-project {
+    list-style-type: disc;
+}
+
+ul.affiliations li.affiliation p.affiliation-project {
+    margin: 0;
+}
+
+ul.affiliations li.affiliation p.affiliation-project.affiliation-project-has-prefix .affiliation-project-title {
+    font-style: italic;
+}
+

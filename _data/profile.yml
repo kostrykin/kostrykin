@@ -1,0 +1,76 @@
+affiliations:
+
+  - institution: Forschungszentrum Jülich GmbH
+    url: https://www.denbi.de/team-elixir-officers
+    url-label: denbi.de
+    positions:
+      - title: ELIXIR Germany Officer of the Heidelberg Center for Human Bioinformatics (HD-HuB)
+        year_started: 2023
+    projects:
+      - title: Development and deployment of image analysis tools for Galaxy Europe and Bioconda
+
+  - institution: Heidelberg University
+    group: Biomedical Computer Vision Group
+    url: http://www.bioquant.uni-heidelberg.de/research/groups/biomedical_computer_vision.html
+    url-label: uni-heidelberg.de
+    positions:
+      - title: Postdoctoral Researcher
+        year_started: 2022
+      - title: Research Fellow, PhD Student
+        year_started: 2016
+        year_ended: 2022
+    projects:
+      - title: Pattern Recognition and Image Analysis for Visual Inspection of Electric Generators
+        year_started: 2019
+      - title: Globally Optimal Cell Segmentation using Shape and Intensity Information
+        year_started: 2016
+
+  - institution: Heinrich-Heine-Universität Düsseldorf
+    positions:
+      - title: Master's Student
+        year_started: 2013
+        year_ended: 2016
+    projects:
+      - title: Blind Deconvolution of Noisy Image Sequences
+        prefix: Master's Project
+
+  - institution: University of Applied Sciences Aachen
+    positions:
+      - title: Undergraduate Student
+        year_started: 2010
+        year_ended: 2013
+    projects:
+      - title: Virtual Coronary Angiography based on CT Data
+        prefix: Thesis
+
+
+presentations:
+
+  - institution: Next Generation Bioimage Analysis Workflows Hackathon
+    format: Invited talk
+    presenter: kostrykin
+    title: Workflows for Image Analysis using Galaxy
+    month: 11
+    year: 2023
+    venue: Irchel Campus, University of Zürich
+
+  - institution: DAGM German Conference on Pattern Recognition
+    format: Poster
+    presenter: kostrykin
+    title: Superadditivity and Convex Optimization for Globally Optimal Cell Segmentation using Deformable Shape Models
+    month: 9
+    year: 2023
+
+  - institution: International Conference on Control, Automation and Systems
+    format: Talk
+    presenter: kostrykin
+    title: Globally Optimal and Scalable Video Image Stitching for Robotic Inspection of Electric Generators
+    month: 10
+    year: 2021
+
+  - institution: IEEE International Symposium on Biomedical Imaging
+    format: Talk
+    presenter: kostrykin
+    title: Segmentation of Cell Nuclei using Intensity-based Model Fitting and Sequential Convex Programming
+    month: 4
+    year: 2018

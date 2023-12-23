@@ -1,0 +1,18 @@
+{%- if include.info%}
+  {%- assign year_started = include.info.year_started -%}
+  {%- assign year_ended = include.info.year_ended -%}
+{%- else -%}
+  {%- assign year_started = include.year_started -%}
+  {%- assign year_ended = include.year_ended -%}
+{%- endif -%}
+{%- if year_started -%}
+  {%- if year_ended -%}
+    {%- if year_started == year_ended -%}
+      ({{ year_started }})
+    {%- else -%}
+      ({{ year_started }}–{{ year_ended }})
+    {%- endif -%}
+  {%- else -%}
+    ({{ year_started }}–present)
+  {%- endif -%}
+{%- endif -%}

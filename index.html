@@ -1,0 +1,106 @@
+---
+title: Profile
+nav_profile: active
+layout: default
+---
+
+<link rel="stylesheet" type="text/css" href="/assets/profile.css?{{ timestamp }}">
+
+<div id="photo"><img src="/assets/photo.jpg"></div>
+
+<div class="introduction">
+    {{ site.owner }} is a postdoctral researcher at Heidelberg University, interested in computer vision, image processing, and computer graphics. His main research interests are globally optimal methods for computer vision and image processing.
+</div>
+
+<h1>Projects and Affiliations</h1>
+
+<ul class="affiliations">{% for affiliation in site.data.profile.affiliations %}
+
+    <li class="affiliation">
+
+        {% if affiliation.group %}<span class="affiliation-group">{{ affiliation.group }},</span>{% endif %}
+
+        <span class="affiliation-institution">{{ affiliation.institution }},</span>
+
+        {% assign positions = affiliation.positions | sort: "year_started" %}
+        <ul class="affiliation-positions">{% for position in positions %}
+
+            <li class="affiliation-position">
+
+                <span class="affiliation-position-title">{{ position.title }}</span>
+
+                <span class="affiliation-position-time">{% include timeinfo.html info=position %}</span>{% if forloop.last == false %},{% else %}.{% endif %}
+
+            </li>
+
+        {% endfor %}</ul>
+
+        {% if affiliation.url %}<a href="{{ affiliation.url }}">[{{ affiliation.url-label }}]</a>{% endif %}
+
+        {% if affiliation.projects.size == 1 %}<p class="affiliation-project {% if affiliation.projects.first.prefix %}affiliation-project-has-prefix{% endif %}">
+
+            {% if affiliation.projects.first.prefix %}<span class="affiliation-project-prefix">{{ affiliation.projects.first.prefix }}:</span>{% endif %}
+
+            <span class="affiliation-project-title">{{ affiliation.projects.first.title }}</span>
+
+            <span class="affiliation-project-time">{{ affiliation.projects.first.time_info }}</span>
+
+        </p>{% else %}
+
+            <ul class="affiliation-projects">{% for project in affiliation.projects %}
+            
+                <li class="affiliation-project">
+            
+                    <span class="affiliation-project-title">{{ project.title }}</span>
+            
+                    <span class="affiliation-project-time">{% include timeinfo.html info=project %}</span>
+            
+                </li>
+            
+            {% endfor %}</ul>
+
+        {% endif%}
+
+    </li>
+
+{% endfor %}</ul>
+
+<h1>Talks and Posters</h1>
+
+<ul class="presentations">{% for presentation in site.data.profile.presentations %}
+
+    <li class="presentation">
+
+        <span class="presentation-format">{{ presentation.format }}.</span>
+
+        <span class="presentation-institution">{{ presentation.institution }}:</span>
+
+        <span class="presentation-title">{{ presentation.title }}.</span>
+
+        <span class="presentation-presenter">{{ site.data.authors[presentation.presenter].name }},</span>
+
+        {% if presentation.venue %}
+        <span class="presentation-venue">{{ presentation.venue }},</span>
+        {% endif %}
+
+        <span class="presentation-date">{% include date.html info=presentation %}.</span>
+
+    </li>
+
+{% endfor %}</ul>
+
+<h1>Mentorship and Teaching</h1>
+
+<ul class="instruction-experiences">{% for experience in instruction_experiences %}
+
+    <li class="instruction-experience">
+
+        <span class="instruction-experience-description">{{ experience.description|format_quotation_marks }}</span>
+
+        <span class="instruction-experience-time">{{ experience.time_info }}.</span>
+
+        {% if experience.url %}<a href="{{ experience.url }}">[{{ experience.url_label }}]</a>{% endif %}
+
+    </li>
+
+{% endfor %}</ul>

@@ -1,0 +1,12 @@
+{%- if include.info -%}
+  {%- assign year = include.info.year -%}
+  {%- assign month = include.info.month -%}
+{%- else -%}
+  {%- assign year = include.year -%}
+  {%- assign month = include.month -%}
+{%- endif -%}
+{%- if year -%}
+  {{- month | prepend: "1." | append: "." | append: year | date: '%-b %Y' -}}
+{%- else -%}
+  {{- month | prepend: "1." | append: ".2000" | date: '%-b' -}}
+{%- endif -%}
