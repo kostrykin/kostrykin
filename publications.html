@@ -7,7 +7,7 @@ permalink: /publications/
 
 <link rel="stylesheet" type="text/css" href="/assets/publications.css?{{ timestamp }}">
 
-{% assign years = site.data.publications | group_by: "year" | sort: "name" | reverse %}
+{% assign years = site.publications | group_by: "year" | sort: "name" | reverse %}
 <ul class="publications">{% for publications in years %}
 
     {% assign publications_in_year = publications.items | sort: "month" | reverse %}

@@ -1,0 +1,9 @@
+{%- assign value = include.value -%}
+{%- assign value = value | replace: "ö", '{\"o}' -%}
+{%- assign value = value | replace: "ü", '{\"u}' -%}
+{%- assign value = value | replace: "ä", '{\"a}' -%}
+{%- assign value = value | replace: "Ö", '{\"O}' -%}
+{%- assign value = value | replace: "Ü", '{\"U}' -%}
+{%- assign value = value | replace: "Ä", '{\"A}' -%}
+{%- assign value = value | replace: "–", '--' -%}
+{{- value -}}

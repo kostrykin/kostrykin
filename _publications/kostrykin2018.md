@@ -1,0 +1,16 @@
+---
+title: Segmentation of Cell Nuclei using Intensity-based Model Fitting and Sequential Convex Programming
+authors: [lkostrykin, cschnörr, krohr]
+conference:
+  proceedings: Proc. IEEE International Symposium on Biomedical Imaging
+  venue: Washington, D.C., USA, April 4–7, IEEE Piscataway, NJ
+  name: ISBI
+pages: pp. 654–657
+month: 4
+year: 2018
+attachments:
+- name: ieeexplore
+  url: https://ieeexplore.ieee.org/document/8363659
+- name: pdf
+  url: https://ipa.math.uni-heidelberg.de/dokuwiki/Papers/Kostrykin2018aa.pdf
+---

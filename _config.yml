@@ -1,10 +1,14 @@
 name: kostrykin.com
 owner: Dr. Leonid Kostrykin
 
-safe: true
+collections:
+  publications:
+    output: true
+    permalink: /:collection/:title.bib
 
-plugins:
-  - jekyll-redirect-from
-
-whitelist:
-  - jekyll-redirect-from
+defaults:
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: bibtex

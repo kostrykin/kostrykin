@@ -1,15 +1,25 @@
 lkostrykin:
   name: L. Kostrykin
+  first_name: Leonid
+  last_name: Kostrykin
   highlight: true
 
 cschnörr:
   name: C. Schnörr
+  first_name: Christoph
+  last_name: Schnörr
 
 krohr:
   name: K. Rohr
+  first_name: Karl
+  last_name: Rohr
 
 crohr:
   name: C. Rohr
+  first_name: Claus
+  last_name: Rohr
 
 sharmeling:
   name: S. Harmeling
+  first_name: Stefan
+  last_name: Harmeling

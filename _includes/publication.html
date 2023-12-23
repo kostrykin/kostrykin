@@ -59,9 +59,9 @@
     {% endfor %}
 
     {% if include.publication.notes %}
-    <li class="publication-attachment"><a href="notes/{{ include.publication.id }}">[notes]</a></li>
+    <li class="publication-attachment"><a href="notes/{{ include.publication.slug }}">[notes]</a></li>
     {% endif %}
 
-    <li class="publication-attachment"><a href="cite/{{ include.publication.id }}">[cite]</a></li>
+    <li class="publication-attachment"><a href="{{ include.publication.url }}">[cite]</a></li>
 
 </ul>
