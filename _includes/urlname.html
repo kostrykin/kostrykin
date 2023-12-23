@@ -1,0 +1,4 @@
+{%- assign parts = include.url | split: "://" -%}
+{%- assign parts = parts[-1] | split: "/"] -%}
+{%- assign parts = parts[0] | split: "." -%}
+{{- parts[-2] -}}.{{- parts[-1] -}}

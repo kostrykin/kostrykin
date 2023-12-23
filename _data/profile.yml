@@ -2,7 +2,6 @@ affiliations:
 
   - institution: Forschungszentrum Jülich GmbH
     url: https://www.denbi.de/team-elixir-officers
-    url-label: denbi.de
     positions:
       - title: ELIXIR Germany Officer of the Heidelberg Center for Human Bioinformatics (HD-HuB)
         year_started: 2023
@@ -12,7 +11,6 @@ affiliations:
   - institution: Heidelberg University
     group: Biomedical Computer Vision Group
     url: http://www.bioquant.uni-heidelberg.de/research/groups/biomedical_computer_vision.html
-    url-label: uni-heidelberg.de
     positions:
       - title: Postdoctoral Researcher
         year_started: 2022
@@ -47,7 +45,7 @@ affiliations:
 presentations:
 
   - institution: Next Generation Bioimage Analysis Workflows Hackathon
-    format: Invited talk
+    format: invited talk
     presenter: kostrykin
     title: Workflows for Image Analysis using Galaxy
     month: 11
@@ -55,22 +53,58 @@ presentations:
     venue: Irchel Campus, University of Zürich
 
   - institution: DAGM German Conference on Pattern Recognition
-    format: Poster
+    format: poster
     presenter: kostrykin
     title: Superadditivity and Convex Optimization for Globally Optimal Cell Segmentation using Deformable Shape Models
     month: 9
     year: 2023
 
   - institution: International Conference on Control, Automation and Systems
-    format: Talk
+    format: talk
     presenter: kostrykin
     title: Globally Optimal and Scalable Video Image Stitching for Robotic Inspection of Electric Generators
     month: 10
     year: 2021
 
   - institution: IEEE International Symposium on Biomedical Imaging
-    format: Talk
+    format: talk
     presenter: kostrykin
     title: Segmentation of Cell Nuclei using Intensity-based Model Fitting and Sequential Convex Programming
     month: 4
     year: 2018
+
+
+teaching:
+
+  - description: Coordinator & teacher of the de.NBI training course "Microscopy Image Analysis 2023", de.NBI Project, HD-HuB
+    year_started: 2023
+    year_ended: 2023
+    url: http://www.bioquant.uni-heidelberg.de/research/groups/biomedical-computer-vision/software/training-courses/microscopy-image-analysis-course-2023.html
+
+  - description: Annual supervision of seminar project on large-scale data analysis
+    year_started: 2022
+    url: https://www.hdsu.org/teaching/
+
+  - description: Mentoring supervision of student project "Interpretation of Machine Learning Models for Classification of Cell Nuclei and Imaging Artifacts" by J. Jegelka
+    year_started: 2020
+    year_ended: 2021
+
+  - description: Annual organization and supervision of Python programming classes for undergraduate students of molecular biotechnology
+    year_started: 2020
+
+  - description: Mentoring supervision of student project "Comparison of Different Image Stitching Software and Methods for Microscopy Images" by S. Kopetschke
+    year_started: 2019
+    year_ended: 2019
+
+  - description: Teacher of the de.NBI training course "Microscopy Image Analysis 2019", de.NBI Project, HD-HuB
+    year_started: 2019
+    year_ended: 2019
+    url: http://www.bioquant.uni-heidelberg.de/research/groups/biomedical_computer_vision/software/training-courses/microscopy-image-analysis-course-2019.html
+
+  - description: Mentoring supervision of student project "Fluorescence Microscopy Image Data Search, Hyperparameter Optimization, and Comparison of Standard Methods for Cell Nuclei Segmentation" by R. Rappold
+    year_started: 2018
+    year_ended: 2018
+
+  - description: Annual supervision of Java programming classes for undergraduate students of molecular biotechnology
+    year_started: 2017
+    year_ended: 2019

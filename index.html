@@ -35,7 +35,7 @@ layout: default
 
         {% endfor %}</ul>
 
-        {% if affiliation.url %}<a href="{{ affiliation.url }}">[{{ affiliation.url-label }}]</a>{% endif %}
+        {% if affiliation.url %}<a href="{{ affiliation.url }}">[{% include urlname.html url=affiliation.url %}]</a>{% endif %}
 
         {% if affiliation.projects.size == 1 %}<p class="affiliation-project {% if affiliation.projects.first.prefix %}affiliation-project-has-prefix{% endif %}">
 
@@ -71,7 +71,7 @@ layout: default
 
     <li class="presentation">
 
-        <span class="presentation-format">{{ presentation.format }}.</span>
+        <span class="presentation-format">{{ presentation.format | capitalize }}.</span>
 
         <span class="presentation-institution">{{ presentation.institution }}:</span>
 
@@ -91,15 +91,15 @@ layout: default
 
 <h1>Mentorship and Teaching</h1>
 
-<ul class="instruction-experiences">{% for experience in instruction_experiences %}
+<ul class="instruction-experiences">{% for experience in site.data.profile.teaching %}
 
     <li class="instruction-experience">
 
-        <span class="instruction-experience-description">{{ experience.description|format_quotation_marks }}</span>
+        <span class="instruction-experience-description">{{ experience.description | smartify }}</span>
 
-        <span class="instruction-experience-time">{{ experience.time_info }}.</span>
+        <span class="instruction-experience-time">{% include timeinfo.html info=experience %}.</span>
 
-        {% if experience.url %}<a href="{{ experience.url }}">[{{ experience.url_label }}]</a>{% endif %}
+        {% if experience.url %}<a href="{{ experience.url }}">[{% include urlname.html url=experience.url %}]</a>{% endif %}
 
     </li>
 
