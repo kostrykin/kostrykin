@@ -13,3 +13,77 @@
     url: https://ieeexplore.ieee.org/document/8363659
   - name: pdf
     url: https://ipa.math.uni-heidelberg.de/dokuwiki/Papers/Kostrykin2018aa.pdf
+
+- id: kostrykin2019
+  title: Globally Optimal Segmentation of Cell Nuclei in Fluorescence Microscopy Images using Shape and Intensity Information
+  authors: [lkostrykin, cschnörr, krohr]
+  journal:
+    name: Medical Image Analysis
+    volume: 58
+  pages: 101536
+  year: 2019
+  attachments:
+  - name: sciencedirect
+    url: https://www.sciencedirect.com/science/article/abs/pii/S1361841518307928
+  - name: pdf
+    url: http://evoid.de/kostrykin2019-accepted-manuscript.pdf
+
+- id: kostrykin2021
+  title: Globally Optimal and Scalable Video Image Stitching for Robotic Inspection of Electric Generators
+  authors: [lkostrykin, crohr, krohr]
+  conference:
+    proceedings: Proc. International Conference on Control, Automation and Systems
+    venue: Jeju-si, Jeju-do, Korea, October 12–15, ICROS Gangnam-gu, Seoul
+    name: ICCAS
+  pages: pp. 1141–1145
+  month: 10
+  year: 2021
+  attachments:
+  - name: ieeexplore
+    url: https://ieeexplore.ieee.org/document/9649973
+
+- id: kostrykin2022a
+  title: Blindly Deconvolving Super-noisy Blurry Image Sequences
+  authors: [lkostrykin, sharmeling]
+  preprint:
+    server: arXiv
+    id: arXiv:2210.00252
+  month: 10
+  year: 2022
+  attachments:
+  - name: arxiv
+    url: https://arxiv.org/abs/2210.00252
+  - name: pdf
+    url: https://arxiv.org/pdf/2210.00252
+
+- id: kostrykin2022b
+  title: Globally Optimal Cell Segmentation using Shape and Intensity Information
+  authors: [lkostrykin]
+  thesis:
+    type: Doctoral Dissertation
+    repository: Universitätsbibliothek Heidelberg
+  month: 11
+  year: 2022
+  attachments:
+  - name: doi
+    url: https://doi.org/10.11588/heidok.00032329
+  - name: pdf
+    url: https://archiv.ub.uni-heidelberg.de/volltextserver/32329/1/thesis-pdfa.pdf
+
+- id: kostrykin2023
+  title: Superadditivity and Convex Optimization for Globally Optimal Cell Segmentation using Deformable Shape Models
+  authors: [lkostrykin, krohr]
+  journal:
+    name: IEEE Transactions on Pattern Analysis and Machine Intelligence
+    volume: 45
+    number: 3
+  pages: pp. 3831–3847
+  year: 2023
+  month: 3
+  attachments:
+  - name: ieeexplore
+    url: https://ieeexplore.ieee.org/document/9804854
+  - name: pdf
+    url: http://evoid.de/kostrykin2023-accepted-manuscript.pdf
+  - name: software
+    url: https://superdsm.readthedocs.io

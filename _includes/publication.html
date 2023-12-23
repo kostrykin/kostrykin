@@ -6,8 +6,8 @@
         {%- else %}
             {{ author_info.name -}}
         {%- endif -%}
-        {%- if forloop.last == false %},{% endif %}
-        {% if forloop.rindex == 2 %}and{% endif %}
+        {%- if forloop.last == false and forloop.length > 2 %},{% endif %}
+        {% if forloop.rindex == 2 and forloop.length > 1 %}and{% endif %}
     {% endfor %}
 </span>
 <span class="publication-title">&ldquo;{{ include.publication.title }}<span class="nospace">,</span>&rdquo;</span>
@@ -19,25 +19,25 @@
 
     <span class="publication-conference-details">{{ include.publication.conference.venue }},</span>
 
-{% elsif include.publication.journalarticle %}
+{% elsif include.publication.journal %}
 
-    <span class="publication-journal-name">{{ include.publication.journalarticle.journal_name }},</span>
+    <span class="publication-journal-name">{{ include.publication.journal.name }},</span>
 
-    {% if include.publication.journalarticle.volume %}
+    {% if include.publication.journal.volume %}
 
-        <span class="publication-journal-volume">vol. {{ include.publication.journalarticle.volume }}{% if include.publication.journalarticle.number %}({{ include.publication.journalarticle.number }}){% endif %},</span>
+        <span class="publication-journal-volume">vol. {{ include.publication.journal.volume }}{% if include.publication.journal.number %}({{ include.publication.journal.number }}){% endif %},</span>
 
     {% endif %}
 
-    {% if include.publication.journalarticle.is_in_press %}<span class="publication-in-press">in press,</span>{% endif %}
+    {% if include.publication.journal.is_in_press %}<span class="publication-in-press">in press,</span>{% endif %}
 
 {% elsif include.publication.preprint %}
 
-    <span class="publication-preprint-details">{{ include.publication.preprint.preprint_server }} preprint {{ include.publication.preprint.preprint_id }},</span>
+    <span class="publication-preprint-details">{{ include.publication.preprint.server }} preprint {{ include.publication.preprint.id }},</span>
 
 {% elsif include.publication.thesis %}
 
-    <span class="publication-thesis-type">{{ include.publication.thesis.thesis_type }},</span>
+    <span class="publication-thesis-type">{{ include.publication.thesis.type }},</span>
 
     <span class="publication-thesis-repository">{{ include.publication.thesis.repository }},</span>
 
