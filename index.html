@@ -27,7 +27,7 @@ layout: default
         <ul class="attachments">
         {% for attachment in project.attachments %}
             
-            <li><a href="{{ attachment.url }}">{{ attachment.name }}</a></li>
+            <li><a href="{{ attachment.url | absolute_url }}">{{ attachment.name }}</a></li>
         
         {% endfor %}
         </ul>
