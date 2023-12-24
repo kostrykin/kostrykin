@@ -22,9 +22,9 @@ layout: default
 
 <ul class="notes">{% for note in page.notes %}
 
-    <li class="note" id="note-{{ note.pk }}">
+    <li class="note" id="note-{{ forloop.index }}">
 
-        <div class="note-link"><a name="note-{{ note.pk }}" href="{{ url }}#note-{{ note.pk }}">&para;</a></div>
+        <div class="note-link"><a name="note-{{ forloop.index }}" href="{{ url }}#note-{{ forloop.index }}">&para;</a></div>
 
         {% if note.reference %}
         <div class="note-reference">Note {{ forloop.index }}, regarding: {{ note.reference }}</div>
