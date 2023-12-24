@@ -12,10 +12,10 @@
 
 <title>kostrykin.com | {{ page.title }}</title>
 
-<link rel="stylesheet" type="text/css" href="/assets/base.css?{{ timestamp }}">
+<link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/base.css?{{ timestamp }}">
 
-<link rel="stylesheet" href="/assets/jqmath/jqmath-0.4.3.min.css">
-<script src="/assets/jqmath/jqmath-vanilla.min.js"></script>
+<link rel="stylesheet" href="{{ site.url }}/assets/jqmath/jqmath-0.4.3.min.css">
+<script src="{{ site.url }}/assets/jqmath/jqmath-vanilla.min.js"></script>
 
 </head>
 <body>
@@ -24,10 +24,10 @@
 
     <ul id="navigation">
 
-        <a href="/"><li class="nav nav-{{ page.nav_profile }}">Profile</li></a>
-        <a href="/publications"><li class="nav nav-{{ page.nav_publications }}">Publications</li></a>
-        <a href="/photography"><li class="nav nav-{{ page.nav_photography }}">Photography</li></a>
-        <a href="/contact"><li class="nav nav-{{ page.nav_contact }}">Contact</li></a>
+        <a href="{{ site.url }}"><li class="nav nav-{{ page.nav_profile }}">Profile</li></a>
+        <a href="{{ site.url }}/publications"><li class="nav nav-{{ page.nav_publications }}">Publications</li></a>
+        <a href="{{ site.url }}/photography"><li class="nav nav-{{ page.nav_photography }}">Photography</li></a>
+        <a href="{{ site.url }}/contact"><li class="nav nav-{{ page.nav_contact }}">Contact</li></a>
 
     </ul>
 

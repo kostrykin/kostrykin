@@ -55,14 +55,14 @@
 <ul class="attachments">
 
     {% for attachment in include.publication.attachments %}
-    <li><a href="{{ attachment.url }}">{{ attachment.name }}</a></li>
+    <li><a href="{{ attachment.url | absolute_url }}">{{ attachment.name }}</a></li>
     {% endfor %}
 
     {% assign notes = site.notes | where: "slug", include.publication.slug | first %}
     {% if notes %}
-    <li><a href="{{ notes.url }}">notes</a></li>
+    <li><a href="{{ notes.url | absolute_url }}">notes</a></li>
     {% endif %}
 
-    <li><a href="{{ include.publication.url }}">cite</a></li>
+    <li><a href="{{ include.publication.url | absolute_url }}">cite</a></li>
 
 </ul>

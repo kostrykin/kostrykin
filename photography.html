@@ -5,7 +5,7 @@ layout: default
 permalink: /photography/
 ---
 
-<link rel="stylesheet" type="text/css" href="/assets/photography.css?{{ timestamp }}">
+<link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/photography.css?{{ timestamp }}">
 
 <h1>Mission Statement</h1>
 
@@ -19,7 +19,7 @@ permalink: /photography/
 
         <div class="photograph-frame">
 
-            <a href="{{ photograph.instagram_url }}"><img src="{{ photograph.url }}" class="photograph-canvas"></a>
+            <a href="{{ photograph.instagram_url }}"><img src="{{ photograph.url | absolute_url }}" class="photograph-canvas"></a>
 
             <span class="photograph-year">{{ photograph.year }}</span>
 
