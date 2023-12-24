@@ -41,6 +41,16 @@ ul.instruction-experiences li.instruction-experience {
     margin-bottom: 0.66em;
 }
 
+ul.projects li.project .project-time,
+ul.projects li.project .project-title {
+    font-weight: bold;
+}
+
+ul.projects li.project .project-description,
+ul.projects li.project .project-description p:first-child {
+    display: inline;
+}
+
 ul.presentations li.presentation .presentation-format {
     font-weight: bold;
 }
@@ -67,15 +77,25 @@ ul.affiliations li.affiliation ul.affiliation-positions li.affiliation-position 
     font-style: italic;
 }
 
+ul.affiliations li.affiliation ul.affiliation-projects {
+    padding: 0;
+}
+
 ul.affiliations li.affiliation ul.affiliation-projects li.affiliation-project {
-    list-style-type: disc;
+    list-style-type: none;
+    display: inline;
 }
 
-ul.affiliations li.affiliation p.affiliation-project {
-    margin: 0;
-}
-
-ul.affiliations li.affiliation p.affiliation-project.affiliation-project-has-prefix .affiliation-project-title {
+ul.affiliations li.affiliation ul.affiliation-projects li.affiliation-project-has-prefix .affiliation-project-title {
     font-style: italic;
 }
 
+ul.instruction-experiences li.instruction-experience p:first-child,
+ul.instruction-experiences li.instruction-experience p:last-child {
+    margin: 0;
+}
+
+ul.instruction-experiences li.instruction-experience .instruction-experience-title,
+ul.instruction-experiences li.instruction-experience .instruction-experience-time {
+    font-weight: bold;
+}

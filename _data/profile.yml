@@ -1,50 +1,55 @@
 projects:
 
-  - title: Enhancing the Image Analysis Community in Galaxy (BioHackathon Europe 2023)
+  - title: Enhancing the Image Analysis Community in Galaxy
     year_started: 2023
     year_ended: 2023
-    hide_year: true
+    description: The goal of this project at the BioHackathon Europe 2023 was to improve the consistency and interoperability of tools currently available on the Galaxy web platform by developing and agreeing upon conventions.
     attachments:
-    - url: https://elixir-europe.org/news/biohack2023
-      name: elixir-europe.org
+      - url: https://elixir-europe.org/news/biohack2023
 
   - title: Microscopy Image Analysis Course 2023
+    subtitle: Organization and Teaching
     year_started: 2023
     year_ended: 2023
     hide_year: true
+    description: We gave an introduction into the field of microscopy image analysis using automated software tools (ImageJ and Galaxy). The course was attended by 17 participants, including scientists from Germany and Italy.
     attachments:
-    - url: http://www.bioquant.uni-heidelberg.de/research/groups/biomedical-computer-vision/software/training-courses/microscopy-image-analysis-course-2023.html
-      name: uni-heidelberg.de
+      - url: http://www.bioquant.uni-heidelberg.de/research/groups/biomedical-computer-vision/software/training-courses/microscopy-image-analysis-course-2023.html
+      - url: https://www.denbi.de/training-archive-sorted-according-by-date/1574-microscopy-image-analysis-course-2023
 
-  - title: Development of Image Analysis Tools for Galaxy Europe and Bioconda
+  - title: Contributing Tools to Galaxy Europe and Bioconda
     year_started: 2022
+    description: We aim to constantly contribute state-of-the-art image analysis tools to the Galaxy web platform and Conda ecosystem to facilitate further research and make the methods accessible to end-users.
     attachments:
-    - url: https://github.com/bioconda/bioconda-recipes
-      name: Bioconda Recipes
-    - url: https://github.com/BMCV/galaxy-image-analysis
-      name: Galaxy Image Analysis
+      - url: https://github.com/bioconda/bioconda-recipes
+        name: Bioconda Recipes
+      - url: https://bio.tools/galaxy_image_analysis
+        name: Galaxy Image Analysis
 
-  - title: Pattern Recognition and Image Analysis for Visual Inspection of Electric Generators
+  - title: Image Analysis for Visual Inspection of Electric Generators
     year_started: 2019
+    description: We develop methods for large-scale image stitching of video data acquired by small robots under low-light conditions to facilitate the inspection process of electric generators.
     attachments:
-    - url: /publications#kostrykin2021
-      name: Kostrykin et al. (ICCAS 2021)
-    - url: https://depatisnet.dpma.de/DepatisNet/depatisnet?window=1&space=menu&content=treffer&action=pdf&docid=WO002023025570A1&xxxfull=1
-      name: Patent WO 2023/025570 A1
+      - url: /publications#kostrykin2021
+        name: Kostrykin et al. (ICCAS 2021)
+      - url: https://depatisnet.dpma.de/DepatisNet/depatisnet?window=1&space=menu&content=treffer&action=pdf&docid=WO002023025570A1&xxxfull=1
+        name: Patent WO 2023/025570 A1
 
-  - title: Globally Optimal Cell Segmentation using Shape and Intensity Information
+  - title: Globally Optimal Segmentation using Shape and Intensity Information
     year_started: 2016
+    description: This project is concerned with the development of new globally optimal methods for segmentation of cell nuclei. Our latest method is SuperDSM, which leverages superadditivity and deformable shape models.
     attachments:
-    - url: /publications#kostrykin2022b
-      name: Dissertation
-    - url: https://github.com/BMCV/SuperDSM
-      name: SuperDSM
+      - url: /publications#kostrykin2022b
+        name: Dissertation
+      - url: https://github.com/BMCV/SuperDSM
+        name: SuperDSM
+      - url: https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/imgteam/superdsm/ip_superdsm
+        name: SuperDSM on Galaxy Europe
 
 
 affiliations:
 
   - institution: Forschungszentrum Jülich GmbH
-    url: https://www.denbi.de/team-elixir-officers
     positions:
       - title: ELIXIR Germany Officer of the Heidelberg Center for Human Bioinformatics (HD-HuB)
         year_started: 2023
@@ -52,22 +57,27 @@ affiliations:
 
   - institution: Heidelberg University
     group: Biomedical Computer Vision Group
-    url: http://www.bioquant.uni-heidelberg.de/research/groups/biomedical_computer_vision.html
     positions:
       - title: Postdoctoral Researcher
         year_started: 2022
       - title: Research Fellow, PhD Student
         year_started: 2016
         year_ended: 2022
+    attachments:
+      - url: http://www.bioquant.uni-heidelberg.de/research/groups/biomedical_computer_vision.html
 
   - institution: Heinrich-Heine-Universität Düsseldorf
     positions:
       - title: Master's Student
         year_started: 2013
         year_ended: 2016
+    description:
     projects:
       - title: Blind Deconvolution of Noisy Image Sequences
         prefix: Master's Project
+    attachments:
+      - url: /publications#kostrykin2022a
+        name: Kostrykin and Harmeling (2022)
 
   - institution: University of Applied Sciences Aachen
     positions:
@@ -77,6 +87,11 @@ affiliations:
     projects:
       - title: Virtual Coronary Angiography based on CT Data
         prefix: Thesis
+    attachments:
+      - url: https://github.com/RWTHmediTEC/Carna
+        name: RWTHmediTEC/Carna
+      - url: https://github.com/RWTHmediTEC/DICOMViewer
+        name: RWTHmediTEC/DICOMViewer
 
 
 presentations:
@@ -113,35 +128,25 @@ presentations:
 
 teaching:
 
-  - description: Coordinator & teacher of the de.NBI training course "Microscopy Image Analysis 2023", de.NBI Project, HD-HuB
-    year_started: 2023
-    year_ended: 2023
-    url: http://www.bioquant.uni-heidelberg.de/research/groups/biomedical-computer-vision/software/training-courses/microscopy-image-analysis-course-2023.html
+  - description: |
+      **Organization of (2023) and Teaching within (2019, 2023) the de.NBI training course** "Microscopy Image Analysis 2023", de.NBI Project, HD-HuB.
+    attachments:
+      - url: http://www.bioquant.uni-heidelberg.de/research/groups/biomedical_computer_vision/software/training-courses/microscopy-image-analysis-course-2019.html
+        name: uni-heidelberg.de (2019)
+      - url: http://www.bioquant.uni-heidelberg.de/research/groups/biomedical-computer-vision/software/training-courses/microscopy-image-analysis-course-2023.html
+        name: uni-heidelberg.de (2023)
 
-  - description: Annual supervision of seminar project on large-scale data analysis
+  - description: |
+      **Annual supervision of seminar projects (2022)** on large-scale data analysis using Python.
     year_started: 2022
-    url: https://www.hdsu.org/teaching/
+    attachments:
+      - url: https://www.hdsu.org/teaching/
 
-  - description: Mentoring supervision of student project "Interpretation of Machine Learning Models for Classification of Cell Nuclei and Imaging Artifacts" by J. Jegelka
-    year_started: 2020
-    year_ended: 2021
+  - description: |
+      **Mentoring supervision of students projects:**
+      - J. Jegelka, *"Interpretation of Machine Learning Models for Classification of Cell Nuclei and Imaging Artifacts"* (2020–2021).
+      - S. Kopetschke, *"Comparison of Different Image Stitching Software and Methods for Microscopy Images"* (2019).
+      - R. Rappold, *"Fluorescence Microscopy Image Data Search, Hyperparameter Optimization, and Comparison of Standard Methods for Cell Nuclei Segmentation"* (2018).
 
-  - description: Annual organization and supervision of Python programming classes for undergraduate students of molecular biotechnology
-    year_started: 2020
-
-  - description: Mentoring supervision of student project "Comparison of Different Image Stitching Software and Methods for Microscopy Images" by S. Kopetschke
-    year_started: 2019
-    year_ended: 2019
-
-  - description: Teacher of the de.NBI training course "Microscopy Image Analysis 2019", de.NBI Project, HD-HuB
-    year_started: 2019
-    year_ended: 2019
-    url: http://www.bioquant.uni-heidelberg.de/research/groups/biomedical_computer_vision/software/training-courses/microscopy-image-analysis-course-2019.html
-
-  - description: Mentoring supervision of student project "Fluorescence Microscopy Image Data Search, Hyperparameter Optimization, and Comparison of Standard Methods for Cell Nuclei Segmentation" by R. Rappold
-    year_started: 2018
-    year_ended: 2018
-
-  - description: Annual supervision of Java programming classes for undergraduate students of molecular biotechnology
-    year_started: 2017
-    year_ended: 2019
+  - description: |
+      **Annual organization (2020–present) and supervision (2017–present) of programming classes** using Java (2017–2019) and Python (2020–present) for undergraduate students.

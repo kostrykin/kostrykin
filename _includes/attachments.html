@@ -1,0 +1,13 @@
+<ul class="attachments">
+{% for attachment in include.object.attachments %}
+    
+    <li><a href="{{ attachment.url | absolute_url }}">
+    {%- if attachment.name -%}
+        {{ attachment.name }}
+    {%- else -%}
+        {% include urlname.html url=attachment.url %}
+    {%- endif -%}
+    </a></li>
+
+{% endfor %}
+</ul>

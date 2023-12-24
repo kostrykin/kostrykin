@@ -19,18 +19,19 @@ layout: default
     <li class="project">
 
         <span class="project-title">{{ project.title | smartify }}</span>
+        {%- if project.subtitle -%},
+        <span class="project-subtitle">{{ project.subtitle | smartify }}</span>
+        {%- endif -%}
 
-        {% if project.hide_year %}{% else %}
-        <span class="project-time">{% include timeinfo.html info=project %}.</span>
+        {%- if project.hide_year -%}{%- else %}
+        <span class="project-time">{%- include timeinfo.html info=project -%}</span>
+        {%- endif -%}.
+
+        {% if project.description %}
+        <div class="project-description">{{ project.description | markdownify }}</div>
         {% endif %}
 
-        <ul class="attachments">
-        {% for attachment in project.attachments %}
-            
-            <li><a href="{{ attachment.url | absolute_url }}">{{ attachment.name }}</a></li>
-        
-        {% endfor %}
-        </ul>
+        {% include attachments.html object=project %}
 
     </li>
 
@@ -59,33 +60,21 @@ layout: default
 
         {% endfor %}</ul>
 
-        {% if affiliation.url %}
-        <ul class="attachments"><li class="attachment"><a href="{{ affiliation.url }}">{% include urlname.html url=affiliation.url %}</a></li></ul>
-        {% endif %}
+        <ul class="affiliation-projects">{% for project in affiliation.projects %}
 
-        {% if affiliation.projects.size == 1 %}<p class="affiliation-project {% if affiliation.projects.first.prefix %}affiliation-project-has-prefix{% endif %}">
+            <li class="affiliation-project {% if project.prefix %}affiliation-project-has-prefix{% endif %}">
 
-            {% if affiliation.projects.first.prefix %}<span class="affiliation-project-prefix">{{ affiliation.projects.first.prefix }}:</span>{% endif %}
+                {% if project.prefix %}<span class="affiliation-project-prefix">{{ project.prefix }}:</span>{% endif %}
 
-            <span class="affiliation-project-title">{{ affiliation.projects.first.title }}</span>
+                <span class="affiliation-project-title">{{ project.title }}</span>
 
-            <span class="affiliation-project-time">{{ affiliation.projects.first.time_info }}</span>
+                <span class="affiliation-project-time">{{ project.time_info }}</span>
 
-        </p>{% else %}
+            </li>
 
-            <ul class="affiliation-projects">{% for project in affiliation.projects %}
-            
-                <li class="affiliation-project">
-            
-                    <span class="affiliation-project-title">{{ project.title }}</span>
-            
-                    <span class="affiliation-project-time">{% include timeinfo.html info=project %}</span>
-            
-                </li>
-            
-            {% endfor %}</ul>
+        {% endfor %}</ul>
 
-        {% endif%}
+        {% include attachments.html object=affiliation %}
 
     </li>
 
@@ -121,13 +110,17 @@ layout: default
 
     <li class="instruction-experience">
 
-        <span class="instruction-experience-description">{{ experience.description | smartify }}</span>
+        {% if experience.title %}
+
+        <span class="instruction-experience-title">{{ experience.title | smartify }}</span>
 
         <span class="instruction-experience-time">{% include timeinfo.html info=experience %}.</span>
 
-        {% if experience.url %}
-        <ul class="attachments"><li class="attachment"><a href="{{ experience.url }}">{% include urlname.html url=experience.url %}</a></li></ul>
         {% endif %}
+
+        <span class="instruction-experience-description">{{ experience.description | markdownify }}</span>
+
+        {% include attachments.html object=experience %}
 
     </li>
 

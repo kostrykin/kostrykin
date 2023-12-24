@@ -32,8 +32,7 @@ ul.attachments > li:first-child
 
 ul.attachments > li a:link,
 ul.attachments > li a:visited,
-ul.attachments > li a:active,
-ul.attachments > li a:hover
+ul.attachments > li a:active
 {
     border-radius: 1em;
     background-color: #ccc;
@@ -43,6 +42,10 @@ ul.attachments > li a:hover
     font-family: sans-serif;
     text-decoration: none;
     font-weight: lighter;
+}
+
+ul.attachments > li a:hover {
+    background-color: #bbb;
 }
 
 .sup {
@@ -201,7 +204,7 @@ html {
 }
 
 #content h1 {
-    font-size: 16pt;
+    font-size: 18pt;
     border-bottom: 1px solid rgb(75%, 20%, 20%);
     margin-top: 1.5em;
 }
