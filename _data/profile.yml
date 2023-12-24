@@ -11,6 +11,7 @@ projects:
   - title: Microscopy Image Analysis Course 2023
     year_started: 2023
     year_ended: 2023
+    hide_year: true
     attachments:
     - url: http://www.bioquant.uni-heidelberg.de/research/groups/biomedical-computer-vision/software/training-courses/microscopy-image-analysis-course-2023.html
       name: uni-heidelberg.de
