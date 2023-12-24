@@ -25,12 +25,14 @@
 
 }
 
+ul.projects,
 ul.affiliations,
 ul.presentations,
 ul.instruction-experiences {
     padding: 0;
 }
 
+ul.projects li.project,
 ul.affiliations li.affiliation,
 ul.presentations li.presentation,
 ul.instruction-experiences li.instruction-experience {

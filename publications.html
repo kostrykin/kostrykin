@@ -13,7 +13,8 @@ permalink: /publications/
     {% assign publications_in_year = publications.items | sort: "month" | reverse %}
     {% for publication in publications_in_year %}
 
-        <li class="publication">
+        <li class="publication" id="{{ publication.slug }}">
+        <a name="{{ publication.slug }}"></a>
 
             {% include publication.html publication=publication %}
 

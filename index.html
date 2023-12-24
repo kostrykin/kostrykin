@@ -12,7 +12,31 @@ layout: default
     {{ site.owner }} is a postdoctral researcher at Heidelberg University, interested in computer vision, image processing, and computer graphics. His main research interests are globally optimal methods for computer vision and image processing.
 </div>
 
-<h1>Projects and Affiliations</h1>
+<h1>Projects</h1>
+
+<ul class="projects">{% for project in site.data.profile.projects %}
+
+    <li class="project">
+
+        <span class="project-title">{{ project.title | smartify }}</span>
+
+        {% if project.hide_year %}{% else %}
+        <span class="project-time">{% include timeinfo.html info=project %}.</span>
+        {% endif %}
+
+        <ul class="attachments">
+        {% for attachment in project.attachments %}
+            
+            <li><a href="{{ attachment.url }}">{{ attachment.name }}</a></li>
+        
+        {% endfor %}
+        </ul>
+
+    </li>
+
+{% endfor %}</ul>
+
+<h1>Affiliations</h1>
 
 <ul class="affiliations">{% for affiliation in site.data.profile.affiliations %}
 
@@ -35,7 +59,9 @@ layout: default
 
         {% endfor %}</ul>
 
-        {% if affiliation.url %}<a href="{{ affiliation.url }}">[{% include urlname.html url=affiliation.url %}]</a>{% endif %}
+        {% if affiliation.url %}
+        <ul class="attachments"><li class="attachment"><a href="{{ affiliation.url }}">{% include urlname.html url=affiliation.url %}</a></li></ul>
+        {% endif %}
 
         {% if affiliation.projects.size == 1 %}<p class="affiliation-project {% if affiliation.projects.first.prefix %}affiliation-project-has-prefix{% endif %}">
 
@@ -99,7 +125,9 @@ layout: default
 
         <span class="instruction-experience-time">{% include timeinfo.html info=experience %}.</span>
 
-        {% if experience.url %}<a href="{{ experience.url }}">[{% include urlname.html url=experience.url %}]</a>{% endif %}
+        {% if experience.url %}
+        <ul class="attachments"><li class="attachment"><a href="{{ experience.url }}">{% include urlname.html url=experience.url %}</a></li></ul>
+        {% endif %}
 
     </li>
 

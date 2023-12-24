@@ -1,3 +1,45 @@
+projects:
+
+  - title: Enhancing the Image Analysis Community in Galaxy (BioHackathon Europe 2023)
+    year_started: 2023
+    year_ended: 2023
+    hide_year: true
+    attachments:
+    - url: https://elixir-europe.org/news/biohack2023
+      name: elixir-europe.org
+
+  - title: Microscopy Image Analysis Course 2023
+    year_started: 2023
+    year_ended: 2023
+    attachments:
+    - url: http://www.bioquant.uni-heidelberg.de/research/groups/biomedical-computer-vision/software/training-courses/microscopy-image-analysis-course-2023.html
+      name: uni-heidelberg.de
+
+  - title: Development of Image Analysis Tools for Galaxy Europe and Bioconda
+    year_started: 2022
+    attachments:
+    - url: https://github.com/bioconda/bioconda-recipes
+      name: Bioconda Recipes
+    - url: https://github.com/BMCV/galaxy-image-analysis
+      name: Galaxy Image Analysis
+
+  - title: Pattern Recognition and Image Analysis for Visual Inspection of Electric Generators
+    year_started: 2019
+    attachments:
+    - url: /publications#kostrykin2021
+      name: Kostrykin et al. (ICCAS 2021)
+    - url: https://depatisnet.dpma.de/DepatisNet/depatisnet?window=1&space=menu&content=treffer&action=pdf&docid=WO002023025570A1&xxxfull=1
+      name: Patent WO 2023/025570 A1
+
+  - title: Globally Optimal Cell Segmentation using Shape and Intensity Information
+    year_started: 2016
+    attachments:
+    - url: /publications#kostrykin2022b
+      name: Dissertation
+    - url: https://github.com/BMCV/SuperDSM
+      name: SuperDSM
+
+
 affiliations:
 
   - institution: Forschungszentrum Jülich GmbH
@@ -6,8 +48,6 @@ affiliations:
       - title: ELIXIR Germany Officer of the Heidelberg Center for Human Bioinformatics (HD-HuB)
         year_started: 2023
         year_ended: 2023
-    projects:
-      - title: Development and deployment of image analysis tools for Galaxy Europe and Bioconda
 
   - institution: Heidelberg University
     group: Biomedical Computer Vision Group
@@ -18,11 +58,6 @@ affiliations:
       - title: Research Fellow, PhD Student
         year_started: 2016
         year_ended: 2022
-    projects:
-      - title: Pattern Recognition and Image Analysis for Visual Inspection of Electric Generators
-        year_started: 2019
-      - title: Globally Optimal Cell Segmentation using Shape and Intensity Information
-        year_started: 2016
 
   - institution: Heinrich-Heine-Universität Düsseldorf
     positions:
