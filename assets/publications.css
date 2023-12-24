@@ -49,16 +49,6 @@ ul.publications li.publication .publication-thesis-repository {
     font-style: italic;
 }
 
-ul.publications li.publication ul.publication-attachments {
-    padding: 0;
-    display: inline;
-}
-
-ul.publications li.publication ul.publication-attachments li.publication-attachment {
-    list-style-type: none;
-    display: inline;
-}
-
 ul.notes li.note .note-link {
     position: relative;
     display: inline-block;

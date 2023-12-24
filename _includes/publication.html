@@ -52,17 +52,17 @@
 
 <span class="publication-year">{{ include.publication.year }}.</span>
 
-<ul class="publication-attachments">
+<ul class="attachments">
 
     {% for attachment in include.publication.attachments %}
-    <li class="publication-attachment"><a href="{{ attachment.url }}">[{{ attachment.name }}]</a></li>
+    <li><a href="{{ attachment.url }}">{{ attachment.name }}</a></li>
     {% endfor %}
 
     {% assign notes = site.notes | where: "slug", include.publication.slug | first %}
     {% if notes %}
-    <li class="publication-attachment"><a href="{{ notes.url }}">[notes]</a></li>
+    <li><a href="{{ notes.url }}">notes</a></li>
     {% endif %}
 
-    <li class="publication-attachment"><a href="{{ include.publication.url }}">[cite]</a></li>
+    <li><a href="{{ include.publication.url }}">cite</a></li>
 
 </ul>
