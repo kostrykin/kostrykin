@@ -79,6 +79,15 @@ affiliations:
       - url: /publications#kostrykin2022a
         name: Kostrykin and Harmeling (2022)
 
+  - institution: MediTEC, RWTH Aachen University
+    positions:
+      - title: Undergraduate Research Assistant
+        year_started: 2013
+        year_ended: 2015
+    attachments:
+      - url: https://github.com/RWTHmediTEC/Carna
+        name: RWTHmediTEC/Carna
+
   - institution: University of Applied Sciences Aachen
     positions:
       - title: Undergraduate Student
@@ -88,8 +97,6 @@ affiliations:
       - title: Virtual Coronary Angiography based on CT Data
         prefix: Thesis
     attachments:
-      - url: https://github.com/RWTHmediTEC/Carna
-        name: RWTHmediTEC/Carna
       - url: https://github.com/RWTHmediTEC/DICOMViewer
         name: RWTHmediTEC/DICOMViewer
 
