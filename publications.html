@@ -5,7 +5,7 @@ layout: default
 permalink: /publications/
 ---
 
-<link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/publications.css?{{ timestamp }}">
+<link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/assets/publications.css?{{ timestamp }}">
 
 {% assign years = site.publications | group_by: "year" | sort: "name" | reverse %}
 <ul class="publications">{% for publications in years %}

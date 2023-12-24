@@ -6,9 +6,9 @@ layout: default
 
 {% assign publication = site.publications | where: "slug", page.slug | first %}
 
-<link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/publications.css?{{ timestamp }}">
+<link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/assets/publications.css?{{ timestamp }}">
 
-<a href="{{ site.url }}/publications">&laquo; Back to list</a>
+<a href="{{ site.url }}{{ site.baseurl }}/publications">&laquo; Back to list</a>
 
 <ul class="publications">
 
