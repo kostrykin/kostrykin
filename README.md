@@ -1,13 +1,27 @@
 # kostrykin.com
 
+**MIT License:**
+If you like this work, feel free to fork, modify, and use yourself.
+
 ## Local setup
 
-Create and activate Conda environment:
-- `mamba env create -f environment.yml`
-- `source activate kostrykin.com`
-- `bundle`
+**Setup dependencies:**
 
-Build the site:
+- Create the Conda environment:
+  ```bash
+  mamba env create -f environment.yml`
+  ```
+- Activate the Conda environment:
+  ```bash
+  source activate website
+  ```
+- Install the required Ruby gems:
+  ```bash
+  bundle
+  ```
+
+**Test the site:**
+
 ```bash
 bundle exec jekyll serve
 ```

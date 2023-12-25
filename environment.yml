@@ -1,4 +1,4 @@
-name: kostrykin.com
+name: website
 channels:
   - conda-forge
 dependencies:
