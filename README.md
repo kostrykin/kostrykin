@@ -1,4 +1,4 @@
-# [kostrykin.com](kostrykin.com)
+# [kostrykin.com](https://kostrykin.com)
 
 **MIT License:**
 If you like this work, feel free to fork, modify, and use yourself.
