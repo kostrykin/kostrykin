@@ -10,6 +10,10 @@
 <meta name="theme-color" content="#641E1E" media="(prefers-color-scheme: dark)">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+{% if site.url contains "kostrykin.com" %}
+<meta http-equiv="content-security-policy" content="upgrade-insecure-requests">
+{% endif %}
+
 <title>kostrykin.com | {{ page.title }}</title>
 
 <link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/assets/base.css?{{ timestamp }}">
