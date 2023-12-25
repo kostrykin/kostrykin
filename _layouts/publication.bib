@@ -5,14 +5,14 @@
 {%- elsif publication.journal -%}
 @article{{ "{" }}{{ publication.slug }},
   journal = "{{ publication.journal.name }}",
-  {% if publication.journal.volume %}
+  {%- if publication.journal.volume %}
   volume = "{{ publication.journal.volume }}",
-    {% if publication.journal.number %}
+    {%- if publication.journal.number %}
   number = "{{ publication.journal.number }}",
-    {% endif %}
-  {% elsif publication.is_in_press %}
+    {%- endif -%}
+  {%- elsif publication.is_in_press %}
   volume = "in press",
-  {% endif %}
+  {%- endif -%}
 {%- elsif publication.preprint -%}
 @article{{ "{" }}{{ publication.slug }},
   journal = "{{ publication.preprint.server }} preprint {{ publication.preprint.id }}",
@@ -20,7 +20,7 @@
 @phdthesis{{ "{" }}{{ publication.slug }},
   school = "{% include escape_latex.html value=publication.thesis.repository %}",
 {%- endif %}
-  title = "{{ publication.title|escape_latex }}",
+  title = "{% include escape_latex.html value=publication.title %}",
   author = "{% for author in publication.authors -%}
         {% assign author_info = site.data.authors[author] %}
         {%- include escape_latex.html value=author_info.last_name -%}, {% include escape_latex.html value=author_info.first_name -%}
