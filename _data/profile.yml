@@ -56,32 +56,38 @@ affiliations:
         year_ended: 2023
 
   - institution: Heidelberg University
-    group: Biomedical Computer Vision Group
+    group: Biomedical Computer Vision Group (BMCV)
     positions:
       - title: Postdoctoral Researcher
         year_started: 2022
       - title: Research Fellow, PhD Student
         year_started: 2016
         year_ended: 2022
+    projects:
+      - title: Globally Optimal Segmentation using Shape and Intensity Information
+        prefix: PhD Thesis
     attachments:
       - url: http://www.bioquant.uni-heidelberg.de/research/groups/biomedical_computer_vision.html
+        name: BMCV
+      - url: /publications#kostrykin2022b
+        name: Dissertation
 
   - institution: Heinrich-Heine-Universität Düsseldorf
     positions:
-      - title: Master's Student
+      - title: Student of Computer Science
         year_started: 2013
         year_ended: 2016
     description:
     projects:
       - title: Blind Deconvolution of Noisy Image Sequences
-        prefix: Master's Project
+        prefix: M.Sc. Project
     attachments:
       - url: /publications#kostrykin2022a
         name: Kostrykin and Harmeling (2022)
 
   - institution: MediTEC, RWTH Aachen University
     positions:
-      - title: Undergraduate Research Assistant
+      - title: Student Assistant
         year_started: 2013
         year_ended: 2015
     attachments:
@@ -90,12 +96,12 @@ affiliations:
 
   - institution: University of Applied Sciences Aachen
     positions:
-      - title: Undergraduate Student
+      - title: Student of Scientific Programming
         year_started: 2010
         year_ended: 2013
     projects:
       - title: Virtual Coronary Angiography based on CT Data
-        prefix: Thesis
+        prefix: B.Sc. Thesis
     attachments:
       - url: https://github.com/RWTHmediTEC/DICOMViewer
         name: RWTHmediTEC/DICOMViewer
