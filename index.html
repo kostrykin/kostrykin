@@ -9,7 +9,7 @@ layout: default
 <div id="photo"><img src="{{ site.url }}{{ site.baseurl }}/assets/photo.jpg"></div>
 
 <div class="introduction">
-    {{ site.owner }} is a postdoctral researcher at Heidelberg University, interested in computer vision, image processing, and computer graphics. His main research interests are globally optimal methods for computer vision and image processing.
+    {{ site.data.profile.introduction | markdownify }}
 </div>
 
 <h1>Projects</h1>

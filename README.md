@@ -9,7 +9,7 @@ If you like this work, feel free to fork, modify, and use yourself.
 
 - Create the Conda environment:
   ```bash
-  mamba env create -f environment.yml`
+  mamba env create -f environment.yml
   ```
 - Activate the Conda environment:
   ```bash
