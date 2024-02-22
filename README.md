@@ -38,6 +38,8 @@ Real-time 3D visualization:
 [Carna](https://github.com/kostrykin/Carna),
 [CarnaPy](https://github.com/kostrykin/CarnaPy)
 
+Actions: [report-test-coverage-action](https://github.com/kostrykin/report-test-coverage-action)
+
 **Teaching repositories:**
 
 - [BMCV/mobi-fs3-python](https://github.com/BMCV/mobi-fs3-python)
