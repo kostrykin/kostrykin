@@ -24,3 +24,33 @@ https://hub.docker.com/u/kostrykin</p>
 
 ![](https://kostrykin.github.io/galaxy-community-activities/report/assets/images/contributiongraphs/kostrykin.png)
 <p align="right"><sup><sub>Generated using https://github.com/kostrykin/galaxy-community-activities</sub></sup></p>
+
+---
+
+**Research and tools:**
+
+Image segmentation:
+[SuperDSM](https://github.com/BMCV/SuperDSM),
+[segmetrics](https://github.com/BMCV/segmetrics)
+
+Real-time 3D visualization:
+[RWTHmediTEC/Carna](https://github.com/RWTHmediTEC/Carna),
+[Carna](https://github.com/kostrykin/Carna),
+[CarnaPy](https://github.com/kostrykin/CarnaPy)
+
+**Teaching repositories:**
+
+- [BMCV/mobi-fs3-python](https://github.com/BMCV/mobi-fs3-python)
+- [BMCV/mobi-fs3-python-assignments](https://github.com/BMCV/mobi-fs3-python-assignments)
+- [BMCV/mobi-fs3-python-lecture](https://github.com/BMCV/mobi-fs3-python-lecture)
+
+- [BMCV/mobi-fs5-python](https://github.com/BMCV/mobi-fs5-python)
+- [BMCV/mobi-fs5-python-assignments](https://github.com/BMCV/mobi-fs5-python-assignments)
+
+Codespaces:
+[python-learning-codespace](https://github.com/kostrykin/python-learning-codespace),
+[mobi-devcontainer-python](https://github.com/kostrykin/mobi-devcontainer-python)
+
+Actions:
+[build-latex-document-action](https://github.com/kostrykin/build-latex-document-action),
+[create-future-branch-action](https://github.com/kostrykin/create-future-branch-action)
