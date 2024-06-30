@@ -114,21 +114,18 @@ presentations:
 
   - institution: Galaxy Community Conference
     format: talk
-    presenter: lkostrykin
     title: Image Analysis in Galaxy
     month: 6
     year: 2024
 
   - institution: IEEE International Symposium on Biomedical Imaging
     format: talk
-    presenter: lkostrykin
     title: Robust Graph Pruning for Efficient Segmentation and Cluster Splitting of Cell Nuclei using Deformable Shape Models
     month: 5
     year: 2024
 
   - institution: Next Generation Bioimage Analysis Workflows Hackathon
     format: invited talk
-    presenter: lkostrykin
     title: Workflows for Image Analysis using Galaxy
     month: 11
     year: 2023
@@ -136,21 +133,18 @@ presentations:
 
   - institution: DAGM German Conference on Pattern Recognition
     format: poster
-    presenter: lkostrykin
     title: Superadditivity and Convex Optimization for Globally Optimal Cell Segmentation using Deformable Shape Models
     month: 9
     year: 2023
 
   - institution: International Conference on Control, Automation and Systems
     format: talk
-    presenter: lkostrykin
     title: Globally Optimal and Scalable Video Image Stitching for Robotic Inspection of Electric Generators
     month: 10
     year: 2021
 
   - institution: IEEE International Symposium on Biomedical Imaging
     format: talk
-    presenter: lkostrykin
     title: Segmentation of Cell Nuclei using Intensity-based Model Fitting and Sequential Convex Programming
     month: 4
     year: 2018
