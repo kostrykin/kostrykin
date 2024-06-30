@@ -112,6 +112,20 @@ affiliations:
 
 presentations:
 
+  - institution: Galaxy Community Conference
+    format: talk
+    presenter: lkostrykin
+    title: Image Analysis in Galaxy
+    month: 6
+    year: 2024
+
+  - institution: IEEE International Symposium on Biomedical Imaging
+    format: talk
+    presenter: lkostrykin
+    title: Robust Graph Pruning for Efficient Segmentation and Cluster Splitting of Cell Nuclei using Deformable Shape Models
+    month: 5
+    year: 2024
+
   - institution: Next Generation Bioimage Analysis Workflows Hackathon
     format: invited talk
     presenter: lkostrykin
