@@ -3,13 +3,6 @@ introduction: |
 
 projects:
 
-  - title: Enhancing the Image Analysis Community in Galaxy
-    year_started: 2023
-    year_ended: 2023
-    description: The goal of this project at the BioHackathon Europe 2023 was to improve the consistency and interoperability of tools currently available on the Galaxy web platform by developing and agreeing upon conventions.
-    attachments:
-      - url: https://elixir-europe.org/news/biohack2023
-
   - title: Microscopy Image Analysis Course 2023
     subtitle: Organization and Teaching
     year_started: 2023
