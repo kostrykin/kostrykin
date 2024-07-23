@@ -57,3 +57,5 @@ Actions:
 [build-latex-document-action](https://github.com/kostrykin/build-latex-document-action),
 [create-future-branch-action](https://github.com/kostrykin/create-future-branch-action),
 [label-semester-issue-action](https://github.com/kostrykin/label-semester-issue-action)
+
+**Personal side-projects:** <https://github.com/kodikit>
