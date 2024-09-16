@@ -38,6 +38,8 @@ Real-time 3D visualization:
 [Carna](https://github.com/kostrykin/Carna),
 [CarnaPy](https://github.com/kostrykin/CarnaPy)
 
+Auxiliary toolboxes: [repype](https://github.com/kostrykin/repype)
+
 Actions: [report-test-coverage-action](https://github.com/marketplace/actions/report-test-coverage)
 
 **Teaching repositories:**
