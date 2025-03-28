@@ -57,7 +57,7 @@ Codespaces:
 
 Actions:
 [build-latex-document-action](https://github.com/kostrykin/build-latex-document-action),
-[create-future-branch-action](https://github.com/kostrykin/create-future-branch-action),
+[current-semester-action](https://github.com/kostrykin/current-semester-action),
 [label-semester-issue-action](https://github.com/kostrykin/label-semester-issue-action)
 
 **Personal side-projects:** <https://github.com/kosmotive>
