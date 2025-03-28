@@ -45,11 +45,7 @@ Actions: [report-test-coverage-action](https://github.com/marketplace/actions/re
 **Teaching repositories:**
 
 - [BMCV/mobi-fs3-python](https://github.com/BMCV/mobi-fs3-python)
-- [BMCV/mobi-fs3-python-assignments](https://github.com/BMCV/mobi-fs3-python-assignments)
-- [BMCV/mobi-fs3-python-lecture](https://github.com/BMCV/mobi-fs3-python-lecture)
-
 - [BMCV/mobi-fs5-python](https://github.com/BMCV/mobi-fs5-python)
-- [BMCV/mobi-fs5-python-assignments](https://github.com/BMCV/mobi-fs5-python-assignments)
 
 Codespaces:
 [python-learning-codespace](https://github.com/kostrykin/python-learning-codespace),
