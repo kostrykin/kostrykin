@@ -35,8 +35,8 @@ Image segmentation:
 
 Real-time 3D visualization:
 [RWTHmediTEC/Carna](https://github.com/RWTHmediTEC/Carna),
-[Carna](https://github.com/kostrykin/LibCarna),
-[CarnaPy](https://github.com/kostrykin/LibCarna-Python)
+[LibCarna](https://github.com/kostrykin/LibCarna),
+[LibCarna-Python](https://github.com/kostrykin/LibCarna-Python)
 
 Auxiliary toolboxes: [repype](https://github.com/kostrykin/repype)
 
