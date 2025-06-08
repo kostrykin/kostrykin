@@ -9,11 +9,11 @@ If you like this work, feel free to fork, modify, and use yourself.
 
 - Create the Conda environment:
   ```bash
-  mamba env create -f environment.yml
+  conda env create -p .env -f environment.yml
   ```
 - Activate the Conda environment:
   ```bash
-  source activate website
+  conda activate ./.env
   ```
 - Install the required Ruby gems:
   ```bash

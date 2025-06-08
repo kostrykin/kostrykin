@@ -6,3 +6,4 @@ dependencies:
   - compilers
   - cxx-compiler
   - ruby
+  - nodejs
