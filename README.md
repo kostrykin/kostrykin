@@ -23,5 +23,5 @@ If you like this work, feel free to fork, modify, and use yourself.
 **Test the site:**
 
 ```bash
-bundle exec jekyll serve
+bundle exec jekyll serve --port 8080
 ```
