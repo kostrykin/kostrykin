@@ -57,7 +57,7 @@ ul.attachments > li a:hover {
 
 body {
     background-color: #rgb(85%, 85%, 85%);
-    font-family: Georgia, serif;
+    font-family: Georgia, serif !important;
     padding: 5mm;
     color: #000;
     padding-bottom: 1cm;
