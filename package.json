@@ -1,0 +1,19 @@
+{
+  "name": "kostrykin.com",
+  "version": "1.0.0",
+  "description": "**MIT License:** If you like this work, feel free to fork, modify, and use yourself.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kostrykin/kostrykin.git"
+  },
+  "author": "Leonid Kostrykin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kostrykin/kostrykin/issues"
+  },
+  "homepage": "https://github.com/kostrykin/kostrykin#readme"
+}
