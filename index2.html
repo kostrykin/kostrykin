@@ -1,0 +1,41 @@
+---
+title: Profile
+nav_profile: active
+layout: default
+---
+
+<div class="row">
+
+<div class="col-12 col-xl-4">
+    <img class="img-fluid main-photo" src="{{ site.url }}{{ site.baseurl }}/assets/photo.jpg">
+</div>
+<div class="col-12 col-xl-8">
+
+<p class="lead serif-text">
+    {{ site.data.profile.introduction | markdownify | remove: '<p>' | remove: '</p>' }}
+</p>
+
+{% for item in site.data.news.items %}
+<div class="card mb-3">
+  {% if item.cover %}
+    <img src="{{ item.cover }}" class="card-img-top">
+  {% endif %}
+  <div class="card-body">
+    <h5 class="card-title">{{ item.title }}</h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary">
+      {% if item.type == 'training' %}
+        Training Course
+      {% elsif item.type == 'patent' %}
+        Patent Granted
+      {% endif %}
+    </h6>
+    <p class="card-text">
+      {{ item.text | markdownify | replace: '<p>', '<p class="card-text">' }}
+    </p>
+  </div>
+</div>
+{% endfor %}
+
+</div>
+</div>
+

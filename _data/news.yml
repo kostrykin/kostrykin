@@ -1,0 +1,33 @@
+items:
+
+  - type: hackathon
+    title: Galaxy Image Analysis Project Accepted for the BioHackathon Europe 2025
+    text: |
+      **June 2025.** The project submission lead by Dr. Kostrykin and entitled "Evolving FAIR image analysis in Galaxy for cross-domain and AI-ready applications" for the upcoming [BioHackathon Europe 2025](https://biohackathon-europe.org) has been accepted. The hackathon is organized by [ELIXIR](https://elixir-europe.org). Following the previous projects
+
+      - Enhancing the image analysis community in Galaxy (2023, online participation)
+      - Development of FAIR image analysis workflows and training in Galaxy (2024, nominated participant)
+
+      this will be the third year in a row that a project focusing on image analysis in Galaxy will be held at the BioHackathon Europe, and the first year that Dr. Kostrykin will participate as a project lead.
+
+  - type: patent
+    title: Method and Device for Monitoring the State of a Component
+    text: |
+      **September 2024.** Following its acceptance as an international patent, our patent application "Method and Device for Monitoring the State of a Component" has now also been registered as a US patent under the Publication Number [US 2024/0296573 A1](https://patentimages.storage.googleapis.com/cc/a6/73/d27918c20cd3d7/US20240296573A1.pdf).
+
+      In 2023, our patent "Method and Device for Monitoring the State of a Component" was already granted and published under the Patent Cooperation Treaty (PCT) by the World Intellectual Property Organization (WIPO) under the International Publication Number [WO 2023/025570 A1](https://depatisnet.dpma.de/DepatisNet/depatisnet?window=1&space=menu&content=treffer&action=pdf&docid=WO002023025570A1&xxxfull=1).
+
+      Both patents are based on our previous publication "Globally Optimal and Scalable Video Image Stitching for Robotic Inspection of Electric Generators"([Kostrykin et al. ICCAS 2021](/publications#kostrykin2021)).
+
+  - type: paper
+    id: kostrykin2021
+
+  - type: training
+    title: Microscopy Image Analysis Course 2023
+    cover: https://www.bioquant.uni-heidelberg.de/sites/default/files/2025-05/MicrIA23_group_photo.jpg
+    text: |
+      **August 2023.** We have delivered a training course on Microscopy Image Analysis. In this course, we gave an introduction into the field of microscopy image analysis using automated software tools (ImageJ and Galaxy). The course was attended by 17 participants, including scientists from Germany and Italy.
+
+      Links:
+      <https://www.bioquant.uni-heidelberg.de/groups/rohr/micria-2023>
+      <https://www.denbi.de/training-archive-sorted-according-by-date/1574-microscopy-image-analysis-course-2023>

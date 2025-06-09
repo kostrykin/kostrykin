@@ -1,3 +1,20 @@
+p.lead {
+    font-weight: normal;
+}
+
+p.lead a:link, p.lead a:visited, p.lead a:active, p.lead a:hover {
+    color: #000;
+    text-decoration-color: rgb(75%, 20%, 20%);
+}
+
+img.main-photo {
+    filter: drop-shadow(0 2mm 2mm rgba(0%, 0%, 0%, 0.2));
+}
+
+.serif-text {
+    font-family: Georgia, serif;
+}
+
 a:link, a:visited, a:active, a:hover {
     color: rgb(75%, 20%, 20%);
     text-decoration: underline;
@@ -56,15 +73,12 @@ ul.attachments > li a:hover {
 }
 
 body {
-    background-color: #rgb(85%, 85%, 85%);
-    font-family: Georgia, serif !important;
+    background-color: rgb(98% 98% 98%) !important;
     padding: 5mm;
     color: #000;
     padding-bottom: 1cm;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 10mm;
-    margin-right: 10mm;
+    margin-left: 10mm !important;
+    margin-right: 10mm !important;
     position: relative;
     min-height: calc(100vh - 15mm);
 }
@@ -181,8 +195,7 @@ html {
 
 #content {
     margin-top: 25mm;
-    line-height: 1.3em;
-    margin-right: auto;
+    line-height: 1.7em;
 }
 
 @-moz-document url-prefix() {
@@ -191,19 +204,13 @@ html {
     }
 }
 
-#navigation, #content {
-    max-width: 21cm;
-}
-
 #content input:read-only {
     background-color: #eee;
     color: #aaa;
 }
 
 #content h1 {
-    font-size: 18pt;
     border-bottom: 1px solid rgb(75%, 20%, 20%);
-    margin-top: 1.5em;
 }
 
 math.ma-block {
