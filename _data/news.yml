@@ -22,7 +22,7 @@ items:
       this will be the third year in a row that a project focusing on image analysis in Galaxy will be held at the BioHackathon Europe, and the first year that Dr. Kostrykin will participate as a project lead.
 
   - type: training
-    title: World-wide Webinar Series on Image Analysis in Galaxy
+    title: Webinar Series on Image Analysis in Galaxy
     text: |
       **Spring 2025.** This spring, we have delivered a broadside of three webinars on image analysis using [Galaxy](https://galaxyproject.org) for three internationally acknowledged institutions. Our first contribution was for the [GloBIAS Bioimage Analysis Seminar Series](https://www.globias.org/activities/bia-seminar-series#h.8hkvvz3f30o8), that was attended by about 50 scientists from across the globe, and was concluded by an extensive Q&amp;A that is now available on the [Image.SC Forums](https://forum.image.sc/t/globias-bioimage-analysis-seminar-series-image-analysis-using-galaxy/109386). The second contribution was for the [EMBL EBI Course on Microscopy Data Analysis](https://www.ebi.ac.uk/training/events/microscopy-data-analysis-2025/#vf-tabs__section--tab2) and reached an audience of about XX attendees world-wide. Our third contriubtion was for the [Euro-BioImaging Image Data Community Days 2025](https://www.eurobioimaging.eu/events/image-data-community-days) and had about XX attendees from across Europe.
 
@@ -39,11 +39,19 @@ items:
 
   - type: paper
     publication: kostrykin2024
+    photos:
+      - /assets/isbi2024a.jpg
+      - /assets/isbi2024b.jpg
 
   - type: paper
     publication: kostrykin2023
     text: |
-      The software is publicly available on [Galaxy Europe](https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/imgteam/superdsm/ip_superdsm). The sources are available on [GitHub](https://github.com/BMCV/SuperDSM). The work has also been presented on the Nectar Track of the German Conference for Pattern Recognition (DAGM GCPR 2024).
+      **March 2023.** Our article "Superadditivity and Convex Optimization for Globally Optimal Cell Segmentation Using Deformable Shape Models" has been published in IEEE TPAMI (vol. 45, no. 3). The article introduces SuperDSM, a new globally optimal method for segmentation of cell nuclei using superadditivity and deformable shape models. Some corrections can be found [here](/notes/notes/kostrykin2023).
+
+      The software is publically available on [Galaxy Europe](https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/imgteam/superdsm/ip_superdsm), [Bioconda](https://anaconda.org/bioconda/superdsm), and [GitHub](https://github.com/BMCV/SuperDSM). The work has also been presented on the Nectar Track of the German Conference for Pattern Recognition (DAGM GCPR 2023).
+    photos:
+      - /assets/gcpr2023a.jpg
+      - /assets/gcpr2023b.jpg
 
   - type: training
     title: Microscopy Image Analysis Course 2023
