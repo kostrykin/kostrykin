@@ -1,0 +1,11 @@
+{% for author in include.authors %}
+    {%- assign author_info = site.data.authors[author] -%}
+    {%- if author_info.highlight -%}
+        <strong>{{ author_info.name -}}</strong>
+    {%- else %}
+        {{ author_info.name -}}
+    {%- endif -%}
+    {%- if forloop.last == false and forloop.length > 2 %},{% endif %}
+    {%- if forloop.last == true %}{{ include.suffix }}{% endif %}
+    {% if forloop.rindex == 2 and forloop.length > 1 %}and{% endif %}
+{% endfor %}

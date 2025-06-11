@@ -1,48 +1,8 @@
 <span class="publication-authors">
-    {% for author in include.publication.authors %}
-        {%- assign author_info = site.data.authors[author] -%}
-        {%- if author_info.highlight -%}
-            <b>{{ author_info.name -}}</b>
-        {%- else %}
-            {{ author_info.name -}}
-        {%- endif -%}
-        {%- if forloop.last == false and forloop.length > 2 %},{% endif %}
-        {%- if forloop.last == true %},{% endif %}
-        {% if forloop.rindex == 2 and forloop.length > 1 %}and{% endif %}
-    {% endfor %}
+    {% include publication-authors.html authors=include.publication.authors suffix=',' %}
 </span>
 <span class="publication-title">&ldquo;{{ include.publication.title }}<span class="nospace">,</span>&rdquo;</span>
-{% if include.publication.conference %}
-
-    in
-
-    <span class="publication-proceedings-title">{{ include.publication.conference.proceedings }} ({{ include.publication.conference.name }} {{ include.publication.year }}),</span>
-
-    <span class="publication-conference-details">{{ include.publication.conference.venue }},</span>
-
-{% elsif include.publication.journal %}
-
-    <span class="publication-journal-name">{{ include.publication.journal.name }},</span>
-
-    {% if include.publication.journal.volume %}
-
-        <span class="publication-journal-volume">vol. {{ include.publication.journal.volume }}{% if include.publication.journal.number %}({{ include.publication.journal.number }}){% endif %},</span>
-
-    {% endif %}
-
-    {% if include.publication.journal.is_in_press %}<span class="publication-in-press">in press,</span>{% endif %}
-
-{% elsif include.publication.preprint %}
-
-    <span class="publication-preprint-details">{{ include.publication.preprint.server }} preprint {{ include.publication.preprint.id }},</span>
-
-{% elsif include.publication.thesis %}
-
-    <span class="publication-thesis-type">{{ include.publication.thesis.type }},</span>
-
-    <span class="publication-thesis-repository">{{ include.publication.thesis.repository }},</span>
-
-{% endif %}
+{% include publication-where.html publication=include.publication %}
 
 {% if include.publication.pages %}
 

@@ -1,21 +1,11 @@
 introduction: |
-  **Dr. Leonid Kostrykin** is a postdoctral researcher in the [Biomedical Computer Vision Group](https://www.bioquant.uni-heidelberg.de/groups/rohr) at Heidelberg University. His main interests are globally optimal methods for computer vision (also image processing and computer graphics). As the [ELIXIR Germany Officer](https://www.denbi.de/team-elixir-officers) of the [Heidelberg Center for Human Bioinformatics (HD-HuB)](https://www.hd-hub.de), he drives new developments of image analysis tools for [Galaxy Europe](https://galaxyproject.org) and [Bioconda](https://bioconda.github.io).
+  **Dr. Leonid Kostrykin** is a postdoctral researcher in the [Biomedical Computer Vision Group](https://www.bioquant.uni-heidelberg.de/groups/rohr) at Heidelberg University. His main interests are globally optimal methods for computer vision. As the [ELIXIR Germany Officer](https://www.denbi.de/team-elixir-officers) of the [Heidelberg Center for Human Bioinformatics (HD-HuB)](https://www.hd-hub.de), he drives new developments of image analysis tools for [Galaxy Europe](https://usegalaxy.eu) and [Bioconda](https://bioconda.github.io).
 
 projects:
 
-  - title: Microscopy Image Analysis Course 2023
-    subtitle: Organization and Teaching
-    year_started: 2023
-    year_ended: 2023
-    hide_year: true
-    description: We gave an introduction into the field of microscopy image analysis using automated software tools (ImageJ and Galaxy). The course was attended by 17 participants, including scientists from Germany and Italy.
-    attachments:
-      - url: http://www.bioquant.uni-heidelberg.de/research/groups/biomedical-computer-vision/software/training-courses/microscopy-image-analysis-course-2023.html
-      - url: https://www.denbi.de/training-archive-sorted-according-by-date/1574-microscopy-image-analysis-course-2023
-
-  - title: Contributing Tools to Galaxy Europe and Bioconda
+  - title: Expanding Galaxy Europe and Bioconda
     year_started: 2022
-    description: We aim to constantly contribute state-of-the-art image analysis tools to the Galaxy web platform and Conda ecosystem to facilitate further research and make the methods accessible to end-users.
+    description: We endeavor to contribute state-of-the-art image analysis tools to the Galaxy web platform and Conda ecosystem, to facilitate further research by making the most recent image analysis methods accessible to the end-users.
     attachments:
       - url: https://github.com/bioconda/bioconda-recipes
         name: Bioconda Recipes
@@ -33,7 +23,7 @@ projects:
 
   - title: Globally Optimal Segmentation using Shape and Intensity Information
     year_started: 2016
-    description: We develop new globally optimal model-based methods for segmentation of cell nuclei. Our latest method is SuperDSM, which leverages superadditivity and deformable shape models.
+    description: We develop new globally optimal model-based methods for segmentation of cell nuclei. Our latest method that is SuperDSM, leverages superadditivity and deformable shape models. The method was published in IEEE TPAMI and presented at the DAGM GCPR.
     attachments:
       - url: /publications#kostrykin2022b
         name: Dissertation
@@ -86,6 +76,9 @@ affiliations:
       - title: Student Assistant
         year_started: 2013
         year_ended: 2015
+      - title: Apprentice
+        year_started: 2010
+        year_ended: 2013
     attachments:
       - url: https://github.com/RWTHmediTEC/Carna
         name: RWTHmediTEC/Carna
@@ -110,54 +103,45 @@ presentations:
     title: Image Analysis in Galaxy
     month: 6
     year: 2024
+    venue: Brno, Czech Republic
 
   - institution: IEEE International Symposium on Biomedical Imaging
-    format: talk
+    format: poster
     title: Robust Graph Pruning for Efficient Segmentation and Cluster Splitting of Cell Nuclei using Deformable Shape Models
     month: 5
     year: 2024
-
-  - institution: Next Generation Bioimage Analysis Workflows Hackathon
-    format: invited talk
-    title: Workflows for Image Analysis using Galaxy
-    month: 11
-    year: 2023
-    venue: Irchel Campus, University of Zürich
+    venue: Athens, Greece
 
   - institution: DAGM German Conference on Pattern Recognition
     format: poster
     title: Superadditivity and Convex Optimization for Globally Optimal Cell Segmentation using Deformable Shape Models
     month: 9
     year: 2023
+    venue: Heidelberg, Germany
 
   - institution: International Conference on Control, Automation and Systems
     format: talk
     title: Globally Optimal and Scalable Video Image Stitching for Robotic Inspection of Electric Generators
     month: 10
     year: 2021
+    venue: Jeju, Korea (online participation)
 
   - institution: IEEE International Symposium on Biomedical Imaging
     format: talk
     title: Segmentation of Cell Nuclei using Intensity-based Model Fitting and Sequential Convex Programming
     month: 4
     year: 2018
+    venue: Washington D.C., USA
 
 
 teaching:
 
   - description: |
-      **Organization of (2023) and Teaching within (2019, 2023) the de.NBI training course** "Microscopy Image Analysis 2023", de.NBI Project, HD-HuB.
-    attachments:
-      - url: http://www.bioquant.uni-heidelberg.de/research/groups/biomedical_computer_vision/software/training-courses/microscopy-image-analysis-course-2019.html
-        name: uni-heidelberg.de (2019)
-      - url: http://www.bioquant.uni-heidelberg.de/research/groups/biomedical-computer-vision/software/training-courses/microscopy-image-analysis-course-2023.html
-        name: uni-heidelberg.de (2023)
+      **Organization of ([2023](https://www.bioquant.uni-heidelberg.de/groups/rohr/micria-2023)) and Teaching within ([2019](https://www.bioquant.uni-heidelberg.de/groups/rohr/micria-2019), [2023](https://www.bioquant.uni-heidelberg.de/groups/rohr/micria-2023)) the training course** "Microscopy Image Analysis", de.NBI Project, HD-HuB.
 
   - description: |
-      **Annual supervision of seminar projects (2022)** on large-scale data analysis using Python.
+      **Annual supervision of [seminar projects](https://www.hdsu.org/teaching/) (2022–present)** on large-scale image analysis using Python for undergraduate students.
     year_started: 2022
-    attachments:
-      - url: https://www.hdsu.org/teaching/
 
   - description: |
       **Supervision of student projects:**

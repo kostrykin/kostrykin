@@ -4,35 +4,182 @@ nav_profile: active
 layout: default
 ---
 
-<div class="row">
+<link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/assets/profile.css?{{ timestamp }}">
 
-<div class="col-12 col-xl-4">
-    <img class="img-fluid main-photo" src="{{ site.url }}{{ site.baseurl }}/assets/photo.jpg">
+<div class="row gx-5">
+
+<div class="col-12 col-xl-4" id="profile-cv">
+
+<img class="img-fluid main-photo mb-2 rounded" src="{{ site.url }}{{ site.baseurl }}/assets/photo.jpg">
+
+<h2 class="mt-4">Projects</h2>
+
+<ul class="projects">{% for project in site.data.profile.projects %}
+
+    <li class="project">
+
+        <span class="project-title">{{ project.title | smartify }}</span>
+        {%- if project.subtitle -%},
+        <span class="project-subtitle">{{ project.subtitle | smartify }}</span>
+        {%- endif -%}
+
+        {%- if project.hide_year -%}{%- else %}
+        <span class="project-time">{%- include timeinfo.html info=project -%}</span>
+        {%- endif -%}.
+
+        {% if project.description %}
+        <div class="project-description">{{ project.description | markdownify }}</div>
+        {% endif %}
+
+    </li>
+
+{% endfor %}</ul>
+
+<h2 class="mt-4">Affiliations</h2>
+
+<ul class="affiliations">{% for affiliation in site.data.profile.affiliations %}
+
+    <li class="affiliation">
+
+        {% if affiliation.group %}<span class="affiliation-group">{{ affiliation.group }},</span>{% endif %}
+
+        <span class="affiliation-institution">{{ affiliation.institution }},</span>
+
+        {% assign positions = affiliation.positions | sort: "year_started" %}
+        <ul class="affiliation-positions">{% for position in positions %}
+
+            <li class="affiliation-position">
+
+                <span class="affiliation-position-title">{{ position.title }}</span>
+
+                <span class="affiliation-position-time">{% include timeinfo.html info=position %}</span>{% if forloop.last == false %},{% else %}.{% endif %}
+
+            </li>
+
+        {% endfor %}</ul>
+
+        <ul class="affiliation-projects">{% for project in affiliation.projects %}
+
+            <li class="affiliation-project {% if project.prefix %}affiliation-project-has-prefix{% endif %}">
+
+                {% if project.prefix %}<span class="affiliation-project-prefix">{{ project.prefix }}:</span>{% endif %}
+
+                <span class="affiliation-project-title">{{ project.title }}</span>
+
+                <span class="affiliation-project-time">{{ project.time_info }}</span>
+
+            </li>
+
+        {% endfor %}</ul>
+
+        {% include attachments.html object=affiliation %}
+
+    </li>
+
+{% endfor %}</ul>
+
+<h2 class="mt-4">Talks and Posters</h2>
+
+<ul class="presentations">{% for presentation in site.data.profile.presentations %}
+
+    <li class="presentation">
+
+        <span class="presentation-format">{{ presentation.format | capitalize }}.</span>
+
+        <span class="presentation-institution">{{ presentation.institution }}:</span>
+
+        <span class="presentation-title">{{ presentation.title }}.</span>
+
+        {% if presentation.venue %}
+        <span class="presentation-venue">{{ presentation.venue }},</span>
+        {% endif %}
+
+        <span class="presentation-date">{% include date.html info=presentation %}.</span>
+
+    </li>
+
+{% endfor %}</ul>
+
+<h2 class="mt-4">Mentorship and Teaching</h2>
+
+<ul class="instruction-experiences">{% for experience in site.data.profile.teaching %}
+
+    <li class="instruction-experience">
+
+        {% if experience.title %}
+
+        <span class="instruction-experience-title">{{ experience.title | smartify }}</span>
+
+        <span class="instruction-experience-time">{% include timeinfo.html info=experience %}.</span>
+
+        {% endif %}
+
+        <span class="instruction-experience-description">{{ experience.description | markdownify }}</span>
+
+    </li>
+
+{% endfor %}</ul>
+
 </div>
-<div class="col-12 col-xl-8">
 
-<p class="lead serif-text">
+<hr class="d-block d-xl-none">
+
+<div class="col-12 col-xl-8" id="profile-main">
+
+<p class="lead serif-text mb-4">
     {{ site.data.profile.introduction | markdownify | remove: '<p>' | remove: '</p>' }}
 </p>
 
 {% for item in site.data.news.items %}
-<div class="card mb-3">
-  {% if item.cover %}
-    <img src="{{ item.cover }}" class="card-img-top">
-  {% endif %}
-  <div class="card-body">
-    <h5 class="card-title">{{ item.title }}</h5>
-    <h6 class="card-subtitle mb-2 text-body-secondary">
-      {% if item.type == 'training' %}
-        Training Course
-      {% elsif item.type == 'patent' %}
-        Patent Granted
-      {% endif %}
-    </h6>
-    <p class="card-text">
-      {{ item.text | markdownify | replace: '<p>', '<p class="card-text">' }}
-    </p>
-  </div>
+<div class="card mb-3 type-{{ item.type }}">
+    {% if item.cover %}
+        <img src="{{ item.cover }}" class="card-img-top">
+    {% endif %}
+    <div class="card-body row">
+
+        {% if site.data.news.icons.expand[item.type] %}
+        <div class="col-2 news-icon">
+            {{ site.data.news.icons.expand[item.type] | replace: site.data.news.icons.replace1, site.data.news.icons.replace2 }}
+        </div>
+        <div class="col-10">
+        {% else %}
+        <div class="col-12">
+        {% endif %}
+
+        {% if item.type == 'paper' %}
+            {% assign p = site.publications | where_exp: 'publication', 'publication.slug == item.publication' | first %}
+            <h5 class="card-title"><a href="/publications#{{ p.slug }}">{{ p.title }}</a></h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">
+                {% include publication-authors.html authors=p.authors %}
+            </h6>
+            <p class="card-text">
+                {% capture pstr %}
+                {% include publication-where.html publication=p compact=true %}
+                {% endcapture %}
+                {% assign pstr = pstr | strip_html | strip %}
+                {% assign len = pstr | size | minus: 1 %}
+                {% assign pstr = pstr | slice: 0, len %}
+                {% assign prefix = pstr | slice: 0, 2 %}
+                {{ pstr }}
+            </p>
+            {% if item.text %}
+                <hr>
+                {{ item.text | markdownify | replace: '<p>', '<p class="card-text">' }}
+            {% endif %}
+        {% else %}
+            <h5 class="card-title">{{ item.title }}</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">
+                {% if item.type == 'training' %}
+                  Training Course
+                {% elsif item.type == 'patent' %}
+                  Patent Granted
+                {% endif %}
+            </h6>
+            {{ item.text | markdownify | replace: '<p>', '<p class="card-text">' }}
+        {% endif %}
+
+        </div>
+    </div>
 </div>
 {% endfor %}
 

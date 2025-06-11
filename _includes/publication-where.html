@@ -1,0 +1,37 @@
+{% if include.publication.conference %}
+
+    {% unless include.compact %}
+    in
+    {% endunless %}
+
+    <span class="publication-proceedings-title">{{ include.publication.conference.proceedings }} ({{ include.publication.conference.name }} {{ include.publication.year }}),</span>
+
+    {% unless include.compact %}
+    <span class="publication-conference-details">{{ include.publication.conference.venue }},</span>
+    {% endunless %}
+
+{% elsif include.publication.journal %}
+
+    <span class="publication-journal-name">{{ include.publication.journal.name }},</span>
+
+    {% unless include.compact %}
+        {% if include.publication.journal.volume %}
+
+            <span class="publication-journal-volume">vol. {{ include.publication.journal.volume }}{% if include.publication.journal.number %}({{ include.publication.journal.number }}){% endif %},</span>
+
+        {% endif %}
+    {% endunless %}
+
+    {% if include.publication.journal.is_in_press %}<span class="publication-in-press">in press,</span>{% endif %}
+
+{% elsif include.publication.preprint %}
+
+    <span class="publication-preprint-details">{{ include.publication.preprint.server }} preprint {{ include.publication.preprint.id }},</span>
+
+{% elsif include.publication.thesis %}
+
+    <span class="publication-thesis-type">{{ include.publication.thesis.type }},</span>
+
+    <span class="publication-thesis-repository">{{ include.publication.thesis.repository }},</span>
+
+{% endif %}
