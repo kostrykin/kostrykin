@@ -126,7 +126,7 @@ body, input, button {
     right: 0;
     background: linear-gradient(to bottom, rgb(100, 30, 30), rgb(145, 43, 48));
     color: white;
-    box-shadow: 0 2mm 2mm #ddd;
+    box-shadow: 0 1mm 3mm rgba(0, 0, 0, 35%);
     z-index: 1000;
     opacity: 0.99;
 }
@@ -182,11 +182,10 @@ html {
     margin-top: 0;
     margin-bottom: 0;
     font-family: Sans-serif;
-    padding: 0;
+    padding: 1px 0 0 0;
     margin-left: 1cm;
     white-space: nowrap;
     overflow-x: scroll;
-    transform: translate(0, 1px);
     -ms-overflow-style: none;
     scrollbar-width: none;
 }

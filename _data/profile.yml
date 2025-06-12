@@ -100,7 +100,7 @@ presentations:
 
   - institution: Galaxy Community Conference
     format: talk
-    title: Image Analysis in Galaxy
+    title: 'Image Analysis in Galaxy: Recept Developments and Highlights'
     month: 6
     year: 2024
     venue: Brno, Czech Republic
@@ -111,6 +111,13 @@ presentations:
     month: 5
     year: 2024
     venue: Athens, Greece
+
+  - institution: Next Generation Bioimage Analysis Workflows Hackathon
+    format: invited talk
+    title: Workflows for Image Analysis using Galaxy
+    month: 11
+    year: 2023
+    venue: Irchel Campus, University of Zürich
 
   - institution: DAGM German Conference on Pattern Recognition
     format: poster
