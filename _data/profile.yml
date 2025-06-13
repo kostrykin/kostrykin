@@ -1,6 +1,28 @@
 introduction: |
   **Dr. Leonid Kostrykin** is a postdoctral researcher in the [Biomedical Computer Vision Group](https://www.bioquant.uni-heidelberg.de/groups/rohr) at Heidelberg University. His main interests are globally optimal methods for computer vision. As the [ELIXIR Germany Officer](https://www.denbi.de/team-elixir-officers) of the [Heidelberg Center for Human Bioinformatics (HD-HuB)](https://www.hd-hub.de), he drives new developments of image analysis tools for [Galaxy Europe](https://usegalaxy.eu) and [Bioconda](https://bioconda.github.io).
 
+photos:
+
+  - url: /assets/gcc2024.jpg
+    title: Galaxy Community Conference (GCC 2024)
+    subtitle: Brno, Czech Republic, Jun 2024
+
+  - url: /assets/biovision2023b.jpg
+    title: Project Presentation at the Next Generation Bioimage Analysis Workflows Hackathon
+    subtitle: Irchel Campus, University of Zürich, Nov 2023
+
+  - url: /assets/biovision2023c.jpg
+    title: Talk "Workflows for Image Analysis using Galaxy" at the Next Generation Bioimage Analysis Workflows Hackathon
+    subtitle: Irchel Campus, University of Zürich, Nov 2023
+
+  - url: /assets/biovision2023a.jpg
+    title: Galaxy Project Team at the Next Generation Bioimage Analysis Workflows Hackathon
+    subtitle: Irchel Campus, University of Zürich, Nov 2023
+
+  - url: /assets/egd2023.jpg
+    title: European Galaxy Days (EGD 2023)
+    subtitle: Albert-Ludwigs-University Freiburg, Oct 2023
+
 projects:
 
   - title: Expanding Galaxy Europe and Bioconda

@@ -19,6 +19,9 @@
 <!-- Include base.css -->
 <link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/assets/base.css?{{ timestamp }}">
 
+<!-- Include youtube.js -->
+<script src="{{ site.url }}{{ site.baseurl }}/assets/youtube.js"></script>
+
 <!-- Include JQMath -->
 <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/jqmath/jqmath-0.4.3.min.css">
 <script src="{{ site.url }}{{ site.baseurl }}/assets/jqmath/jqmath-vanilla.min.js"></script>
@@ -26,6 +29,13 @@
 <!-- Include Bootstrap -->
 <link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/assets/node_modules/bootstrap/dist/css/bootstrap.min.css?{{ timestamp }}">
 <script src="{{ site.url }}{{ site.baseurl }}/assets/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Initialize scripts -->
+<script language="javascript">
+window.onload = function() {
+    youtubeInitialize();
+}
+</script>
 
 </head>
 <body>
