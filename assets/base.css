@@ -75,23 +75,41 @@ a:link, a:visited, a:active, a:hover {
     background-size: cover;
 }
 
-.youtube-thumbnail .youtube-thumbnail-button {
+.youtube-thumbnail .youtube-thumbnail-overlay {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 2;
+    background: linear-gradient(rgba(0%, 0%, 0%, 0.5), rgba(0%, 0%, 0%, 0%), rgba(0%, 0%, 0%, 0.4));
+    cursor: pointer;
+    color: white;
+    padding: 1em;
+    font-size: 120%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-shadow: 0 0 0.1em black;
+}
+
+.youtube-thumbnail .youtube-thumbnail-button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-image: url('/assets/youtube-play-button.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 18%;
-    background-color: rgba(0%, 0%, 0%, 0.4);
-    cursor: pointer;
 }
 
-.youtube-thumbnail .youtube-thumbnail-button:hover {
-    background-color: rgba(0%, 0%, 0%, 0.42);
+.youtube-thumbnail .youtube-thumbnail-logo {
+    border-radius: 50%;
+    height: 2.5em;
+    width: auto;
+    margin-right: 0.2em;
 }
 
 /* <-- MAIN SECTION */

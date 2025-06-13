@@ -9,6 +9,28 @@ function youtubeInitialize()
     {
         const rootElementID = `youtube-thumbnail-${ nextRootElementID++ }`;
         rootElement.setAttribute( 'id', rootElementID );
+
+        const thumbnailURL   = rootElement.getAttribute( 'data-thumbnail' );
+        const thumbnailTitle = rootElement.getAttribute( 'data-title' );
+        const thumbnailLogo  = rootElement.getAttribute( 'data-logo' );
+
+        style.innerHTML = style.innerHTML.concat
+        (
+            `\n
+            #${ rootElementID }::after {
+                background-image: url("${ thumbnailURL }");
+            }
+            `
+        );
+
+        const overlay = document.createElement( 'div' );
+        overlay.classList.add( 'youtube-thumbnail-overlay' );
+        overlay.innerHTML = `
+            <img src="${ thumbnailLogo }" class="youtube-thumbnail-logo"> ${ thumbnailTitle }
+            <div class="youtube-thumbnail-button"></div>
+        `;
+        rootElement.appendChild( overlay );
+
         rootElement.onclick = function()
         {
             const iframe = rootElement.getElementsByTagName( 'iframe' )[ 0 ];
@@ -25,21 +47,8 @@ function youtubeInitialize()
             )
             rootElement.removeAttribute( 'id' );
             rootElement.classList.remove( 'youtube-thumbnail' );
+            overlay.remove();
         };
-
-        const thumbnailURL = rootElement.getAttribute( 'data-thumbnail' );
-        style.innerHTML = style.innerHTML.concat
-        (
-            `\n
-            #${ rootElementID }::after {
-                background-image: url("${ thumbnailURL }");
-            }
-            `
-        );
-
-        const playButton = document.createElement( 'div' );
-        playButton.classList.add( 'youtube-thumbnail-button' );
-        rootElement.appendChild( playButton );
     }
 
 }
