@@ -37,6 +37,12 @@ items:
 
       Both patents are based on our previous publication "Globally Optimal and Scalable Video Image Stitching for Robotic Inspection of Electric Generators"([Kostrykin et al. ICCAS 2021](/publications#kostrykin2021)).
 
+  - type: photos
+    title: Galaxy Community Conference (GCC 2024)
+    subtitle: Brno, Czech Republic, Jun 2024
+    photos:
+    - url: /assets/gcc2024.jpg
+
   - type: paper
     publication: kostrykin2024
     text: |
@@ -46,6 +52,19 @@ items:
     photos:
       - /assets/isbi2024a.jpg
       - /assets/isbi2024b.jpg
+
+  - type: photos
+    subtitle: Irchel Campus, University of Zürich, Nov 2023
+    autoplay: true
+    photos:
+    - url: /assets/biovision2023b.jpg
+      title: Project Presentation at the Next Generation Bioimage Analysis Workflows Hackathon
+
+    - url: /assets/biovision2023c.jpg
+      title: Invited Talk "Workflows for Image Analysis using Galaxy", Next Generation Bioimage Analysis Workflows Hackathon
+
+    - url: /assets/biovision2023a.jpg
+      title: Galaxy Project Team at the Next Generation Bioimage Analysis Workflows Hackathon
 
   - type: paper
     publication: kostrykin2023

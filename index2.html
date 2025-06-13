@@ -130,95 +130,109 @@ layout: default
     {{ site.data.profile.introduction | markdownify | remove: '<p>' | remove: '</p>' }}
 </p>
 
-<div id="carousel" class="carousel carousel-fade slide mb-3" data-bs-ride="carousel">
-
-    <div class="carousel-inner">
-    {% for photo in site.data.profile.photos %}
-
-        <div class="carousel-item carousel-item-overlay {% if forloop.first %} active {% endif %}">
-            <img src="{{ photo.url }}" class="d-block w-100 rounded" alt="{{ photo.title }}">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>{{ photo.title }}</h5>
-                <p>{{ photo.subtitle }}</p>
-            </div>
-        </div>
-
-    {% endfor %}
-    </div>
-
-    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-
-    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-
-</div>
-
 {% for item in site.data.news.items %}
-<div class="card mb-3 type-{{ item.type }}">
-    {% if item.cover %}
-        <img src="{{ item.cover }}" class="card-img-top">
-    {% endif %}
-    <div class="card-body row">
+    {% assign item_id = "item-" | append: forloop.index %}
 
-        {% if site.data.news.icons.expand[item.type] %}
-        <div class="col-2 news-icon">
-            {{ site.data.news.icons.expand[item.type] | replace: site.data.news.icons.replace1, site.data.news.icons.replace2 }}
-        </div>
-        <div class="col-10">
-        {% else %}
-        <div class="col-12">
-        {% endif %}
+    {% if item.type == 'photos' %}
 
-        {% if item.type == 'paper' %}
-            {% assign p = site.publications | where_exp: 'publication', 'publication.slug == item.publication' | first %}
-            <h5 class="card-title"><a href="/publications#{{ p.slug }}">{{ p.title }}</a></h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary">
-                {% include publication-authors.html authors=p.authors %}
-            </h6>
-            <p class="card-text">
-                {% capture pstr %}
-                {% include publication-where.html publication=p compact=true %}
-                {% endcapture %}
-                {% assign pstr = pstr | strip_html | strip %}
-                {% assign len = pstr | size | minus: 1 %}
-                {% assign pstr = pstr | slice: 0, len %}
-                {% assign prefix = pstr | slice: 0, 2 %}
-                {{ pstr }}
-            </p>
-            {% if item.text %}
-                <hr>
-                {{ item.text | markdownify | replace: '<p>', '<p class="card-text">' }}
-            {% endif %}
-        {% else %}
-            <h5 class="card-title">{{ item.title }}</h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary">
-                {% if item.type == 'training' %}
-                  Training Course
-                {% elsif item.type == 'patent' %}
-                  Patent Granted
-                {% endif %}
-            </h6>
-            {{ item.text | markdownify | replace: '<p>', '<p class="card-text">' }}
-        {% endif %}
-
-        {% if item.photos %}
-            <div class="row">
+        <div id="{{ item_id }}" class="carousel carousel-fade slide mb-3" {% if item.autoplay %} data-bs-ride="carousel" {% endif %}>
+        
+            <div class="carousel-inner">
             {% for photo in item.photos %}
-                <div class="col-6">
-                    <img class="img-fluid border rounded" src="{{ photo }}">
+
+                {% assign title = photo.title | default: item.title %}
+                {% assign subtitle = photo.subtitle | default: item.subtitle %}
+        
+                <div class="carousel-item carousel-item-overlay {% if forloop.first %} active {% endif %}">
+                    <img src="{{ photo.url }}" class="d-block w-100 border rounded" alt="{{ photo.title }}">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>{{ title }}</h5>
+                        <p>{{ subtitle }}</p>
+                    </div>
                 </div>
+        
             {% endfor %}
             </div>
-        {% endif %}
 
+            {% if item.photos.size > 1 %}
+                <button class="carousel-control-prev" type="button" data-bs-target="#{{ item_id }}" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+        
+                <button class="carousel-control-next" type="button" data-bs-target="#{{ item_id }}" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            {% endif %}
+        
         </div>
-    </div>
-</div>
+
+    {% else %}
+
+        <div class="card mb-3 type-{{ item.type }}">
+            {% if item.cover %}
+                <img src="{{ item.cover }}" class="card-img-top">
+            {% endif %}
+            <div class="card-body row">
+        
+                {% if site.data.news.icons.expand[item.type] %}
+                <div class="col-2 news-icon">
+                    {{ site.data.news.icons.expand[item.type] | replace: site.data.news.icons.replace1, site.data.news.icons.replace2 }}
+                </div>
+                <div class="col-10">
+                {% else %}
+                <div class="col-12">
+                {% endif %}
+        
+                {% if item.type == 'paper' %}
+                    {% assign p = site.publications | where_exp: 'publication', 'publication.slug == item.publication' | first %}
+                    <h5 class="card-title"><a href="/publications#{{ p.slug }}">{{ p.title }}</a></h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">
+                        {% include publication-authors.html authors=p.authors %}
+                    </h6>
+                    <p class="card-text">
+                        {% capture pstr %}
+                        {% include publication-where.html publication=p compact=true %}
+                        {% endcapture %}
+                        {% assign pstr = pstr | strip_html | strip %}
+                        {% assign len = pstr | size | minus: 1 %}
+                        {% assign pstr = pstr | slice: 0, len %}
+                        {% assign prefix = pstr | slice: 0, 2 %}
+                        {{ pstr }}
+                    </p>
+                    {% if item.text %}
+                        <hr>
+                        {{ item.text | markdownify | replace: '<p>', '<p class="card-text">' }}
+                    {% endif %}
+                {% else %}
+                    <h5 class="card-title">{{ item.title }}</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">
+                        {% if item.type == 'training' %}
+                          Training Course
+                        {% elsif item.type == 'patent' %}
+                          Patent Granted
+                        {% endif %}
+                    </h6>
+                    {{ item.text | markdownify | replace: '<p>', '<p class="card-text">' }}
+                {% endif %}
+        
+                {% if item.photos %}
+                    <div class="row">
+                    {% for photo in item.photos %}
+                        <div class="col-6">
+                            <img class="img-fluid border rounded" src="{{ photo }}">
+                        </div>
+                    {% endfor %}
+                    </div>
+                {% endif %}
+        
+                </div>
+            </div>
+        </div>
+
+    {% endif %}
+
 {% endfor %}
 
 </div>
