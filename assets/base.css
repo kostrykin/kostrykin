@@ -105,6 +105,10 @@ a:link, a:visited, a:active, a:hover {
     background-size: 18%;
 }
 
+.youtube-thumbnail:hover .youtube-thumbnail-button {
+    filter: brightness(1.05);
+}
+
 .youtube-thumbnail .youtube-thumbnail-logo {
     border-radius: 50%;
     height: 2.5em;
