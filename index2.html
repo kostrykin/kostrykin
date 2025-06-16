@@ -18,7 +18,7 @@ layout: default
 
     <li class="project">
 
-        <span class="project-title">{{ project.title | smartify }}</span>
+        <span class="project-title">{{ project.title | smartify | markdownify | remove: '<p>' | remove: '</p>' }}</span>
         {%- if project.subtitle -%},
         <span class="project-subtitle">{{ project.subtitle | smartify }}</span>
         {%- endif -%}
@@ -126,7 +126,7 @@ layout: default
 
 <div class="col-12 col-xl-8" id="profile-main">
 
-<p class="lead serif-text mb-4">
+<p class="lead serif-text mb-5">
     {{ site.data.profile.introduction | markdownify | remove: '<p>' | remove: '</p>' }}
 </p>
 
@@ -135,7 +135,7 @@ layout: default
 
     {% if item.type == 'photos' %}
 
-        <div id="{{ item_id }}" class="carousel carousel-fade slide mb-3" {% if item.autoplay %} data-bs-ride="carousel" {% endif %}>
+        <div id="{{ item_id }}" class="carousel carousel-fade slide mb-4" {% if item.autoplay %} data-bs-ride="carousel" {% endif %}>
         
             <div class="carousel-inner">
             {% for photo in item.photos %}
@@ -170,7 +170,7 @@ layout: default
 
     {% else %}
 
-        <div class="card mb-3 type-{{ item.type }}">
+        <div class="card mb-4 type-{{ item.type }}">
             {% if item.cover %}
                 <img src="{{ item.cover }}" class="card-img-top">
             {% endif %}
@@ -212,6 +212,8 @@ layout: default
                           Training Course
                         {% elsif item.type == 'patent' %}
                           Patent Granted
+                        {% elsif item.type == 'galaxy' %}
+                          Galaxy Project
                         {% endif %}
                     </h6>
                     {{ item.text | markdownify | replace: '<p>', '<p class="card-text">' }}

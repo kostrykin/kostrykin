@@ -10,9 +10,8 @@ icons:
 
 items:
 
-  - type: hackathon
+  - type: galaxy
     title: Galaxy Image Analysis Project Accepted for the BioHackathon Europe 2025
-    cover: /assets/bheu2024.jpg
     text: |
       **June 2025.** The project submission lead by Dr. Kostrykin and entitled "Evolving FAIR image analysis in Galaxy for cross-domain and AI-ready applications" for the upcoming [BioHackathon Europe 2025](https://biohackathon-europe.org) has been accepted. The hackathon is organized by [ELIXIR](https://elixir-europe.org). Following the previous projects
 
@@ -28,6 +27,12 @@ items:
 
       <div class="youtube-thumbnail fluid-iframe" data-thumbnail="/assets/galaxy-webinars-spring-2025.jpg" data-title="Image Analysis using Galaxy by B. Serrano-Solano, A. Fouilloux, L. Kostrykin, R. Massei" data-logo="/assets/yt-globias.png"><iframe src="https://www.youtube-nocookie.com/embed/wAHOPT6lRV0?si=udjQ48FqQ-xHZ72A&amp;start=217&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
+  - type: photos
+    title: Project Team at the BioHackathon Europe (BHEU 2024)
+    subtitle: Campus Belloch, Barcelona, Spain, Nov 2024
+    photos:
+    - url: /assets/bheu2024b.jpg
+
   - type: patent
     title: Method and Device for Monitoring the State of a Component
     text: |
@@ -37,11 +42,11 @@ items:
 
       Both patents are based on our previous publication "Globally Optimal and Scalable Video Image Stitching for Robotic Inspection of Electric Generators"([Kostrykin et al. ICCAS 2021](/publications#kostrykin2021)).
 
-  - type: photos
-    title: Galaxy Community Conference (GCC 2024)
-    subtitle: Brno, Czech Republic, Jun 2024
-    photos:
-    - url: /assets/gcc2024.jpg
+#  - type: photos
+#    title: Galaxy Community Conference (GCC 2024)
+#    subtitle: Brno, Czech Republic, Jun 2024
+#    photos:
+#    - url: /assets/gcc2024.jpg
 
   - type: paper
     publication: kostrykin2024

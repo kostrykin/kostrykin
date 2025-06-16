@@ -3,9 +3,9 @@ introduction: |
 
 projects:
 
-  - title: Expanding Galaxy Europe and Bioconda
+  - title: Expanding [Galaxy Europe](https://usegalaxy.eu) and [Bioconda](https://bioconda.github.io)
     year_started: 2022
-    description: We endeavor to contribute state-of-the-art image analysis tools to the Galaxy web platform and Conda ecosystem, to facilitate further research by making the most recent image analysis methods accessible to the end-users.
+    description: We endeavor to contribute state-of-the-art image analysis tools to the [Galaxy Project](https://galaxyproject.org) and [Conda ecosystem](https://anaconda.org/anaconda/conda), to make recent image analysis methods accessible for everyone, and to facilitate further research.
     attachments:
       - url: https://github.com/bioconda/bioconda-recipes
         name: Bioconda Recipes
