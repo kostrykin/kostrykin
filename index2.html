@@ -41,7 +41,13 @@ layout: default
 
     <li class="affiliation">
 
-        {% if affiliation.group %}<span class="affiliation-group">{{ affiliation.group }},</span>{% endif %}
+        {% if affiliation.group %}
+            <span class="affiliation-group">
+                {%- if affiliation.group_url -%}<a href="{{ affiliation.group_url }}">{%- endif -%}
+                    {{ affiliation.group }},
+                {%- if affiliation.group_url -%}</a>{%- endif -%}
+            </span>
+        {% endif %}
 
         <span class="affiliation-institution">{{ affiliation.institution }},</span>
 
@@ -64,15 +70,17 @@ layout: default
 
                 {% if project.prefix %}<span class="affiliation-project-prefix">{{ project.prefix }}:</span>{% endif %}
 
+                {% if project.url %}<a href="{{ project.url }}">{% endif %}
+
                 <span class="affiliation-project-title">{{ project.title }}</span>
+
+                {% if project.url %}</a>{% endif %}
 
                 <span class="affiliation-project-time">{{ project.time_info }}</span>
 
             </li>
 
         {% endfor %}</ul>
-
-        {% include attachments.html object=affiliation %}
 
     </li>
 

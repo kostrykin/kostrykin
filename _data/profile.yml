@@ -6,37 +6,21 @@ projects:
   - title: Expanding [Galaxy Europe](https://usegalaxy.eu) and [Bioconda](https://bioconda.github.io)
     year_started: 2022
     description: We endeavor to contribute state-of-the-art image analysis tools to the [Galaxy Project](https://galaxyproject.org) and [Conda ecosystem](https://anaconda.org/anaconda/conda), to make recent image analysis methods accessible for everyone, and to facilitate further research.
-    attachments:
-      - url: https://github.com/bioconda/bioconda-recipes
-        name: Bioconda Recipes
-      - url: https://bio.tools/galaxy_image_analysis
-        name: Galaxy Image Analysis
 
   - title: Image Analysis for Visual Inspection of Electric Generators
     year_started: 2019
     description: We are concerned with the development of methods for large-scale image stitching of video data, acquired by small robots under low-light conditions to facilitate the inspection process of electric generators.
-    attachments:
-      - url: /publications#kostrykin2021
-        name: Kostrykin et al. (ICCAS 2021)
-      - url: https://depatisnet.dpma.de/DepatisNet/depatisnet?window=1&space=menu&content=treffer&action=pdf&docid=WO002023025570A1&xxxfull=1
-        name: Patent WO 2023/025570 A1
 
   - title: Globally Optimal Segmentation using Shape and Intensity Information
     year_started: 2016
     description: We develop new globally optimal model-based methods for segmentation of cell nuclei. Our latest method that is SuperDSM, leverages superadditivity and deformable shape models. The method was published in IEEE TPAMI and presented at the DAGM GCPR.
-    attachments:
-      - url: /publications#kostrykin2022b
-        name: Dissertation
-      - url: https://github.com/BMCV/SuperDSM
-        name: SuperDSM
-      - url: https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/imgteam/superdsm/ip_superdsm
-        name: SuperDSM on Galaxy Europe
 
 
 affiliations:
 
   - institution: Heidelberg University
     group: Biomedical Computer Vision Group (BMCV)
+    group_url: https://bioquant.uni-heidelberg.de/groups/rohr
     positions:
       - title: Postdoctoral Researcher
         year_started: 2022
@@ -46,11 +30,7 @@ affiliations:
     projects:
       - title: Globally Optimal Segmentation using Shape and Intensity Information
         prefix: PhD Thesis
-    attachments:
-      - url: http://www.bioquant.uni-heidelberg.de/research/groups/biomedical_computer_vision.html
-        name: BMCV
-      - url: /publications#kostrykin2022b
-        name: Dissertation
+        url: /publications#kostrykin2022b
 
   - institution: Forschungszentrum Jülich GmbH
     positions:
@@ -67,9 +47,7 @@ affiliations:
     projects:
       - title: Blind Deconvolution of Noisy Image Sequences
         prefix: M.Sc. Project
-    attachments:
-      - url: /publications#kostrykin2022a
-        name: Kostrykin and Harmeling (2022)
+        url: /publications#kostrykin2022a
 
   - institution: MediTEC, RWTH Aachen University
     positions:
@@ -79,9 +57,6 @@ affiliations:
       - title: Apprentice
         year_started: 2010
         year_ended: 2013
-    attachments:
-      - url: https://github.com/RWTHmediTEC/Carna
-        name: RWTHmediTEC/Carna
 
   - institution: University of Applied Sciences Aachen
     positions:
@@ -91,9 +66,6 @@ affiliations:
     projects:
       - title: Virtual Coronary Angiography based on CT Data
         prefix: B.Sc. Thesis
-    attachments:
-      - url: https://github.com/RWTHmediTEC/DICOMViewer
-        name: RWTHmediTEC/DICOMViewer
 
 
 presentations:

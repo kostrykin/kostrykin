@@ -145,30 +145,45 @@ ul.attachments {
 
 ul.attachments > li
 {
-    display: inline-block;
     list-style-type: none;
     margin: 0;
     margin-left: 0.2rem;
     margin-top: 0.2rem;
     padding: 0;
-}
-
-ul.attachments > li a:link,
-ul.attachments > li a:visited,
-ul.attachments > li a:active
-{
-    border-radius: 1em;
-    background-color: #ccc;
-    padding: 0.1rem 0.5rem 0.1rem 0.5rem;
     font-size: 0.95rem;
-    color: #0d0d0d;
-    font-family: sans-serif;
-    text-decoration: none;
     font-weight: lighter;
+    color: #0d0d0d;
+    display: inline-block;
 }
 
-ul.attachments > li a:hover {
-    background-color: #d2d2d2;
+ul.attachments > li > a {
+    display: flex;
+    align-items: center;
+}
+
+ul.attachments > li > a > span.icon
+{
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 0.2em;
+    color: rgb(75%, 20%, 20%);
+    position: relative;
+}
+
+ul.attachments > li > a > span.icon > :is(img, svg)
+{
+    width: 100%;
+    height: 100%;
+    padding: 0.3rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .sup {

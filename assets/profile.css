@@ -52,6 +52,7 @@ ul.affiliations li.affiliation ul.affiliation-positions li.affiliation-position 
 
 ul.affiliations li.affiliation ul.affiliation-projects {
     padding: 0;
+    display: inline;
 }
 
 ul.affiliations li.affiliation ul.affiliation-projects li.affiliation-project {
@@ -61,6 +62,10 @@ ul.affiliations li.affiliation ul.affiliation-projects li.affiliation-project {
 
 ul.affiliations li.affiliation ul.affiliation-projects li.affiliation-project-has-prefix .affiliation-project-title {
     font-style: italic;
+}
+
+ul.affiliations li.affiliation ul.affiliation-projects li.affiliation-project .affiliation-project-title::after {
+    content: '.';
 }
 
 ul.instruction-experiences li.instruction-experience p:first-child,

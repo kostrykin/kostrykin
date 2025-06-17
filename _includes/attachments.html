@@ -1,13 +1,31 @@
-<ul class="attachments mb-3">
+<ul class="attachments">
 {% for attachment in include.object.attachments %}
     
-    <li><a href="{{ attachment.url | absolute_url }}">
-    {%- if attachment.name -%}
-        {{ attachment.name }}
-    {%- else -%}
-        {% include urlname.html url=attachment.url %}
-    {%- endif -%}
-    </a></li>
+    <li class="{% unless attachment.icon %} no-icon {% endunless %}">
+        <a href="{{ attachment.url | absolute_url }}">
+            {%- if attachment.icon -%}<span class="icon">
+
+                {%- assign icon_expansion = site.data.icons.icons.expand[attachment.icon] -%}
+                {%- if icon_expansion -%}
+                    {{ icon_expansion }}
+                {%- else -%}
+                    <img src="/assets/icons/{{ attachment.icon }}.png">
+                {%- endif -%}
+
+            </span>&nbsp;{%- endif -%}
+            <span>
+                {%- if attachment.name -%}
+
+                    {{ attachment.name }}
+
+                {%- else -%}
+
+                    {% include urlname.html url=attachment.url %}
+
+                {%- endif -%}
+            </span>
+        </a>
+    </li>
 
 {% endfor %}
 </ul>
