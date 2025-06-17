@@ -5,7 +5,7 @@ projects:
 
   - title: Expanding [Galaxy Europe](https://usegalaxy.eu) and [Bioconda](https://bioconda.github.io)
     year_started: 2022
-    description: We endeavor to contribute state-of-the-art image analysis tools to the [Galaxy Project](https://galaxyproject.org) and [Conda ecosystem](https://anaconda.org/anaconda/conda), to make recent image analysis methods accessible for everyone, and to facilitate further research.
+    description: We contribute state-of-the-art image analysis tools to the [Galaxy Project](https://galaxyproject.org) and [Conda ecosystem](https://anaconda.org/anaconda/conda), to make recent image analysis methods accessible for everyone, and to facilitate further research.
 
   - title: Image Analysis for Visual Inspection of Electric Generators
     year_started: 2019
@@ -114,6 +114,12 @@ presentations:
 
 
 teaching:
+
+  - description: |
+      **Series of Webinar Contributions on Image Analysis in Galaxy (2025)** for
+      [GloBIAS Bioimage Analysis Seminar Series](https://www.globias.org/activities/bia-seminar-series#h.8hkvvz3f30o8),
+      [EMBL EBI Course on Microscopy Data Analysis](https://www.ebi.ac.uk/training/events/microscopy-data-analysis-2025/#vf-tabs__section--tab2), and
+      [Euro-BioImaging Image Data Community Days 2025](https://www.eurobioimaging.eu/events/image-data-community-days).
 
   - description: |
       **Organization of ([2023](https://www.bioquant.uni-heidelberg.de/groups/rohr/micria-2023)) and Teaching within ([2019](https://www.bioquant.uni-heidelberg.de/groups/rohr/micria-2019), [2023](https://www.bioquant.uni-heidelberg.de/groups/rohr/micria-2023)) the training course** "Microscopy Image Analysis", de.NBI Project, HD-HuB.

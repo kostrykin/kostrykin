@@ -56,7 +56,7 @@ items:
   - type: paper
     publication: kostrykin2024
     text: |
-      **May 2024.** Our conference paper "Robust Graph Pruning for Efficient Segmentation and Cluster Splitting of Cell Nuclei using Deformable Shape Models" has been presented at the IEEE ISBI 2024 in Athens, Greece. This contribution significantly improves the efficiency SuperDSM, our previously published method for cell nuclei segmentation using superadditivity and deformable shapre models.
+      **May 2024.** Our conference paper "Robust Graph Pruning for Efficient Segmentation and Cluster Splitting of Cell Nuclei using Deformable Shape Models" has been presented at the IEEE ISBI 2024 in Athens, Greece. This contribution significantly improves the efficiency SuperDSM (our previously published method for cell nuclei segmentation, based on superadditivity and deformable shapre models).
 
       The software is publically available on [Galaxy Europe](https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/imgteam/superdsm/ip_superdsm), [Bioconda](https://anaconda.org/bioconda/superdsm), and [GitHub](https://github.com/BMCV/SuperDSM).
     photos:
