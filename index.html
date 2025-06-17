@@ -6,19 +6,19 @@ layout: default
 
 <link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/assets/profile.css?{{ timestamp }}">
 
-<div id="photo"><img src="{{ site.url }}{{ site.baseurl }}/assets/photo.jpg"></div>
+<div class="row gx-5">
 
-<div class="introduction">
-    {{ site.data.profile.introduction | markdownify }}
-</div>
+<div class="col-12 col-xl-4" id="profile-cv">
 
-<h1>Projects</h1>
+<img class="img-fluid main-photo mb-2 rounded" src="{{ site.url }}{{ site.baseurl }}/assets/photo.jpg">
+
+<h2 class="mt-4">Projects</h2>
 
 <ul class="projects">{% for project in site.data.profile.projects %}
 
     <li class="project">
 
-        <span class="project-title">{{ project.title | smartify }}</span>
+        <span class="project-title">{{ project.title | smartify | markdownify | remove: '<p>' | remove: '</p>' }}</span>
         {%- if project.subtitle -%},
         <span class="project-subtitle">{{ project.subtitle | smartify }}</span>
         {%- endif -%}
@@ -31,19 +31,23 @@ layout: default
         <div class="project-description">{{ project.description | markdownify }}</div>
         {% endif %}
 
-        {% include attachments.html object=project %}
-
     </li>
 
 {% endfor %}</ul>
 
-<h1>Affiliations</h1>
+<h2 class="mt-4">Affiliations</h2>
 
 <ul class="affiliations">{% for affiliation in site.data.profile.affiliations %}
 
     <li class="affiliation">
 
-        {% if affiliation.group %}<span class="affiliation-group">{{ affiliation.group }},</span>{% endif %}
+        {% if affiliation.group %}
+            <span class="affiliation-group">
+                {%- if affiliation.group_url -%}<a href="{{ affiliation.group_url }}">{%- endif -%}
+                    {{ affiliation.group }},
+                {%- if affiliation.group_url -%}</a>{%- endif -%}
+            </span>
+        {% endif %}
 
         <span class="affiliation-institution">{{ affiliation.institution }},</span>
 
@@ -66,7 +70,11 @@ layout: default
 
                 {% if project.prefix %}<span class="affiliation-project-prefix">{{ project.prefix }}:</span>{% endif %}
 
+                {% if project.url %}<a href="{{ project.url }}">{% endif %}
+
                 <span class="affiliation-project-title">{{ project.title }}</span>
+
+                {% if project.url %}</a>{% endif %}
 
                 <span class="affiliation-project-time">{{ project.time_info }}</span>
 
@@ -74,13 +82,11 @@ layout: default
 
         {% endfor %}</ul>
 
-        {% include attachments.html object=affiliation %}
-
     </li>
 
 {% endfor %}</ul>
 
-<h1>Talks and Posters</h1>
+<h2 class="mt-4">Talks and Posters</h2>
 
 <ul class="presentations">{% for presentation in site.data.profile.presentations %}
 
@@ -102,7 +108,7 @@ layout: default
 
 {% endfor %}</ul>
 
-<h1>Mentorship and Teaching</h1>
+<h2 class="mt-4">Mentorship and Teaching</h2>
 
 <ul class="instruction-experiences">{% for experience in site.data.profile.teaching %}
 
@@ -118,8 +124,122 @@ layout: default
 
         <span class="instruction-experience-description">{{ experience.description | markdownify }}</span>
 
-        {% include attachments.html object=experience %}
-
     </li>
 
 {% endfor %}</ul>
+
+</div>
+
+<hr class="d-block d-xl-none">
+
+<div class="col-12 col-xl-8" id="profile-main">
+
+<p class="lead serif-text mb-5">
+    {{ site.data.profile.introduction | markdownify | remove: '<p>' | remove: '</p>' }}
+</p>
+
+{% for item in site.data.news.items %}
+
+    <div class="card mb-4 type-{{ item.type }}">
+        {% if item.cover %}
+            <img src="{{ item.cover }}" class="card-img-top">
+        {% endif %}
+        <div class="card-body row gx-1">
+    
+            {% assign icon_expansion = site.data.news.icons.expand[item.type] %}
+            {% if icon_expansion %}
+            <div class="col-2 news-icon">
+                {{ icon_expansion | replace: site.data.news.icons.replace1, site.data.news.icons.replace2 }}
+            </div>
+            <div class="col-10">
+            {% else %}
+            <div class="col-12">
+            {% endif %}
+    
+            {% if item.type == 'paper' %}
+                {% assign p = site.publications | where_exp: 'publication', 'publication.slug == item.publication' | first %}
+                <h5 class="card-title"><a href="/publications#{{ p.slug }}">{{ p.title }}</a></h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">
+                    {% include publication-authors.html authors=p.authors %}
+                </h6>
+                <p class="card-text">
+                    {% capture pstr %}
+                    {% include publication-where.html publication=p compact=true %}
+                    {% endcapture %}
+                    {% assign pstr = pstr | strip_html | strip %}
+                    {% assign len = pstr | size | minus: 1 %}
+                    {% assign pstr = pstr | slice: 0, len %}
+                    {% assign prefix = pstr | slice: 0, 2 %}
+                    {{ pstr }}
+                </p>
+                {% if item.text %}
+                    <hr>
+                    {{ item.text | markdownify | replace: '<p>', '<p class="card-text">' }}
+                {% endif %}
+            {% elsif item.type == 'photos' %}
+                {% assign carousel_id = "item-" | append: forloop.index %}
+                <div id="{{ carousel_id }}" class="carousel carousel-fade slide" {% if item.autoplay %} data-bs-ride="carousel" {% endif %}>
+                
+                    <div class="carousel-inner">
+                    {% for photo in item.photos %}
+
+                        {% assign title = photo.title | default: item.title %}
+                        {% assign subtitle = photo.subtitle | default: item.subtitle %}
+                
+                        <div class="carousel-item carousel-item-overlay {% if forloop.first %} active {% endif %}">
+                            <img src="{{ photo.url }}" class="d-block w-100 border rounded" alt="{{ photo.title }}">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>{{ title }}</h5>
+                                <p>{{ subtitle }}</p>
+                            </div>
+                        </div>
+                
+                    {% endfor %}
+                    </div>
+
+                    {% if item.photos.size > 1 %}
+                        <button class="carousel-control-prev" type="button" data-bs-target="#{{ carousel_id }}" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                
+                        <button class="carousel-control-next" type="button" data-bs-target="#{{ carousel_id }}" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    {% endif %}
+                
+                </div>
+            {% else %}
+                <h5 class="card-title">{{ item.title }}</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">
+                    {% if item.type == 'training' %}
+                      Training Course
+                    {% elsif item.type == 'patent' %}
+                      Patent Granted
+                    {% elsif item.type == 'galaxy' %}
+                      Galaxy Project
+                    {% endif %}
+                </h6>
+                {{ item.text | markdownify | replace: '<p>', '<p class="card-text">' }}
+            {% endif %}
+    
+            {% if item.photos and item.type != 'photos' %}
+                <div class="row">
+                {% for photo in item.photos %}
+                    <div class="col-6">
+                        <img class="img-fluid border rounded" src="{{ photo }}">
+                    </div>
+                {% endfor %}
+                </div>
+            {% endif %}
+    
+            </div>
+        </div>
+    </div>
+
+{% endfor %}
+
+</div>
+</div>
+
