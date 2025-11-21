@@ -70,6 +70,20 @@ affiliations:
 
 presentations:
 
+  - institution: European Galaxy Days
+    format: invited talk
+    title: 'Streamlining the User Experience for Reproducible Image Analysis in Galaxy'
+    month: 10
+    year: 2025
+    venue: Freiburg, Germany
+
+  - institution: Galaxy and Bioconductor Community Conference
+    format: talk
+    title: 'Streamlining the User Experience for Reproducible Image Analysis in Galaxy'
+    month: 6
+    year: 2025
+    venue: Cold Spring Harbor, New York, USA
+
   - institution: Galaxy Community Conference
     format: talk
     title: 'Image Analysis in Galaxy: Recept Developments and Highlights'
