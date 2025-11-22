@@ -16,6 +16,7 @@ icons:
 items:
 
   - type: galaxy
+    project: galaxy
     title: Galaxy Image Analysis Project Accepted for the BioHackathon Europe 2025
     text: |
       **June 2025.** The project submission lead by Dr. Kostrykin and entitled "Evolving FAIR image analysis in Galaxy for cross-domain and AI-ready applications" for the upcoming [BioHackathon Europe 2025](https://biohackathon-europe.org) has been accepted. The hackathon is organized by [ELIXIR](https://elixir-europe.org). Following the previous projects
@@ -26,6 +27,7 @@ items:
       this will be the third year in a row that a project focusing on image analysis in Galaxy will be held at the BioHackathon Europe, and the first year that Dr. Kostrykin will participate as a project lead.
 
   - type: training
+    project: galaxy
     title: Webinar Series on Image Analysis in Galaxy
     text: |
       **Spring 2025.** This spring, we have delivered a broadside of three webinars on image analysis using [Galaxy](https://galaxyproject.org) for three internationally acknowledged institutions. Our first contribution was for the [GloBIAS Bioimage Analysis Seminar Series](https://www.globias.org/activities/bia-seminar-series#h.8hkvvz3f30o8), that was attended by about 50 scientists from across the globe, and was concluded by an extensive Q&amp;A that is now available on the [Image.SC Forums](https://forum.image.sc/t/globias-bioimage-analysis-seminar-series-image-analysis-using-galaxy/109386). The second contribution was for the [EMBL EBI Course on Microscopy Data Analysis](https://www.ebi.ac.uk/training/events/microscopy-data-analysis-2025/#vf-tabs__section--tab2) and reached an audience of about 40 attendees world-wide. Our third contriubtion was for the [Euro-BioImaging Image Data Community Days 2025](https://www.eurobioimaging.eu/events/image-data-community-days) and had about 90 attendees from across Europe.
@@ -33,12 +35,14 @@ items:
       <div class="youtube-thumbnail fluid-iframe" data-thumbnail="/assets/galaxy-webinars-spring-2025.jpg" data-title="Image Analysis using Galaxy by B. Serrano-Solano, A. Fouilloux, L. Kostrykin, R. Massei" data-logo="/assets/yt-globias.png"><iframe src="https://www.youtube-nocookie.com/embed/wAHOPT6lRV0?si=udjQ48FqQ-xHZ72A&amp;start=217&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
   - type: photos
+    project: galaxy
     title: Project Team at the BioHackathon Europe (BHEU 2024)
     subtitle: Campus Belloch, Barcelona, Spain, Nov 2024
     photos:
     - url: /assets/bheu2024b.jpg
 
   - type: patent
+    project: registration
     title: Method and Device for Monitoring the State of a Component
     text: |
       **September 2024.** Following its acceptance as an international patent, our patent application "Method and Device for Monitoring the State of a Component" has now also been registered as a US patent under the Publication Number [US 2024/0296573 A1](https://patentimages.storage.googleapis.com/cc/a6/73/d27918c20cd3d7/US20240296573A1.pdf).
@@ -54,6 +58,7 @@ items:
 #    - url: /assets/gcc2024.jpg
 
   - type: paper
+    project: segmentation
     publication: kostrykin2024
     text: |
       **May 2024.** Our conference paper "Robust Graph Pruning for Efficient Segmentation and Cluster Splitting of Cell Nuclei using Deformable Shape Models" has been presented at the IEEE ISBI 2024 in Athens, Greece. This contribution significantly improves the efficiency SuperDSM (our previously published method for cell nuclei segmentation, based on superadditivity and deformable shapre models).
@@ -64,6 +69,7 @@ items:
       - /assets/isbi2024b.jpg
 
   - type: photos
+    project: galaxy
     subtitle: Irchel Campus, University of Zürich, Nov 2023
     autoplay: true
     photos:
@@ -77,6 +83,7 @@ items:
       title: Galaxy Project Team at the Next Generation Bioimage Analysis Workflows Hackathon
 
   - type: paper
+    project: segmentation
     publication: kostrykin2023
     text: |
       **March 2023.** Our article "Superadditivity and Convex Optimization for Globally Optimal Cell Segmentation Using Deformable Shape Models" has been published in IEEE TPAMI (vol. 45, no. 3). The article introduces SuperDSM, a new globally optimal method for segmentation of cell nuclei using superadditivity and deformable shape models. Some corrections can be found [here](/notes/notes/kostrykin2023).
@@ -87,6 +94,7 @@ items:
       - /assets/gcpr2023b.jpg
 
   - type: training
+    project: galaxy
     title: Microscopy Image Analysis Course 2023
     cover: https://www.bioquant.uni-heidelberg.de/sites/default/files/2025-05/MicrIA23_group_photo.jpg
     text: |

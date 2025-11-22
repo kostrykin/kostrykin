@@ -4,14 +4,17 @@ introduction: |
 projects:
 
   - title: Expanding [Galaxy Europe](https://usegalaxy.eu) and [Bioconda](https://bioconda.github.io)
+    id: galaxy
     year_started: 2022
     description: We contribute state-of-the-art image analysis tools to the [Galaxy Project](https://galaxyproject.org) and [Conda ecosystem](https://anaconda.org/anaconda/conda), to make recent image analysis methods accessible for everyone, and to facilitate further research.
 
   - title: Image Analysis for Visual Inspection of Electric Generators
+    id: registration
     year_started: 2019
     description: We are concerned with the development of methods for large-scale image stitching of video data, acquired by small robots under low-light conditions to facilitate the inspection process of electric generators.
 
   - title: Globally Optimal Segmentation using Shape and Intensity Information
+    id: segmentation
     year_started: 2016
     description: We develop new globally optimal model-based methods for segmentation of cell nuclei. Our latest method that is SuperDSM, leverages superadditivity and deformable shape models. The method was published in IEEE TPAMI and presented at the DAGM GCPR.
 
@@ -76,6 +79,7 @@ presentations:
     month: 10
     year: 2025
     venue: Freiburg, Germany
+    project: galaxy
 
   - institution: Galaxy and Bioconductor Community Conference
     format: talk
@@ -83,6 +87,7 @@ presentations:
     month: 6
     year: 2025
     venue: Cold Spring Harbor, New York, USA
+    project: galaxy
 
   - institution: Galaxy Community Conference
     format: talk
@@ -90,6 +95,7 @@ presentations:
     month: 6
     year: 2024
     venue: Brno, Czech Republic
+    project: galaxy
 
   - institution: IEEE International Symposium on Biomedical Imaging
     format: poster
@@ -97,6 +103,7 @@ presentations:
     month: 5
     year: 2024
     venue: Athens, Greece
+    project: segmentation
 
   - institution: Next Generation Bioimage Analysis Workflows Hackathon
     format: invited talk
@@ -104,6 +111,7 @@ presentations:
     month: 11
     year: 2023
     venue: Irchel Campus, University of Zürich
+    project: galaxy
 
   - institution: DAGM German Conference on Pattern Recognition
     format: poster
@@ -111,6 +119,7 @@ presentations:
     month: 9
     year: 2023
     venue: Heidelberg, Germany
+    project: segmentation
 
   - institution: International Conference on Control, Automation and Systems
     format: talk
@@ -118,6 +127,7 @@ presentations:
     month: 10
     year: 2021
     venue: Jeju, Korea (online participation)
+    project: registration
 
   - institution: IEEE International Symposium on Biomedical Imaging
     format: talk
@@ -125,6 +135,7 @@ presentations:
     month: 4
     year: 2018
     venue: Washington D.C., USA
+    project: segmentation
 
 
 teaching:
@@ -134,9 +145,11 @@ teaching:
       [GloBIAS Bioimage Analysis Seminar Series](https://www.globias.org/activities/bia-seminar-series#h.8hkvvz3f30o8),
       [EMBL EBI Course on Microscopy Data Analysis](https://www.ebi.ac.uk/training/events/microscopy-data-analysis-2025/#vf-tabs__section--tab2), and
       [Euro-BioImaging Image Data Community Days 2025](https://www.eurobioimaging.eu/events/image-data-community-days).
+    project: galaxy
 
   - description: |
       **Organization of ([2023](https://www.bioquant.uni-heidelberg.de/groups/rohr/micria-2023)) and Teaching within ([2019](https://www.bioquant.uni-heidelberg.de/groups/rohr/micria-2019), [2023](https://www.bioquant.uni-heidelberg.de/groups/rohr/micria-2023)) the training course** "Microscopy Image Analysis", de.NBI Project, HD-HuB.
+    project: galaxy
 
   - description: |
       **Annual supervision of [seminar projects](https://www.hdsu.org/teaching/) (2022–present)** on large-scale image analysis using Python for undergraduate students.
