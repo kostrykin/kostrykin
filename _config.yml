@@ -7,17 +7,17 @@ collections:
     permalink: /:collection/:title.bib
   notes:
     output: true
-    permalink: /:collection/notes/:title
+    permalink: /:collection/:title
 
 defaults:
   - scope:
-      path: ""
       type: publications
+      path: ""
     values:
       layout: publication
   - scope:
-      path: ""
       type: notes
+      path: ""
     values:
       layout: notes
       title: Publication Notes      
