@@ -20,6 +20,8 @@ defaults:
       type: notes
     values:
       layout: notes
+      title: Publication Notes      
+      nav_publications: active
 
 exclude:
   - .env
