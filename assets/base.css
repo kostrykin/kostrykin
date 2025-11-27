@@ -201,8 +201,6 @@ body {
     padding: 5mm;
     color: #000;
     padding-bottom: 1cm;
-    margin-left: 10mm !important;
-    margin-right: 10mm !important;
     position: relative;
     min-height: calc(100vh - 15mm);
 }
