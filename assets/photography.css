@@ -1,23 +1,24 @@
 ul.photographs {
     padding: 0;
-    margin-right: -15mm;
-    margin-top: 3mm;
+    margin-right: -7mm;
+    margin-top: -5mm;
 }
 
 ul.photographs li.photograph {
     list-style-type: none;
-    margin-top: 0.66em;
-    margin-bottom: 15mm;
-    margin-right: 15mm;
+    margin-top: 7mm;
+    margin-bottom: 0;
+    margin-right: 7mm;
     display: inline-block;
 }
 
 ul.photographs li.photograph .photograph-frame {
     max-width: 14cm;
     background-color: #fff;
-    filter: drop-shadow(0 0 5mm rgba(0%, 0%, 0%, 0.1));
+    filter: drop-shadow(0 0 5mm rgba(0%, 0%, 0%, 0.01));
     position: relative;
     display: inline-block;
+    border-radius: 3mm;
 }
 
 ul.photographs li.photograph .photograph-frame a:hover {
@@ -33,9 +34,9 @@ ul.photographs li.photograph .photograph-year,
 ul.photographs li.photograph .photograph-location {
     position: absolute;
     bottom: 3mm;
-    font-family: Sans-serif;
-    font-size: 8pt;
-    color: #aaa;
+    font-family: Georgia, serif;
+    font-size: 11pt;
+    color: rgba(0, 0, 0, 0.2);
 }
 
 ul.photographs li.photograph .photograph-year {
