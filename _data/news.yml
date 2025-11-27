@@ -18,6 +18,7 @@ items:
   - type: galaxy
     project: galaxy
     title: Galaxy Image Analysis Project Accepted for the BioHackathon Europe 2025
+    cover: /assets/bheu2025.jpg
     text: |
       **June 2025.** The project submission lead by Dr. Kostrykin and entitled "Evolving FAIR image analysis in Galaxy for cross-domain and AI-ready applications" for the upcoming [BioHackathon Europe 2025](https://biohackathon-europe.org) has been accepted. The hackathon is organized by [ELIXIR](https://elixir-europe.org). Following the previous projects
 
