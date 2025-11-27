@@ -197,8 +197,7 @@ ul.attachments > li > a > span.icon > :is(img, svg)
 }
 
 body {
-    background-color: rgb(98% 98% 98%) !important;
-    padding: 5mm;
+    background-color: rgb(100 30 30) !important;
     color: #000;
     padding-bottom: 1cm;
     position: relative;
@@ -207,6 +206,12 @@ body {
 
 body, input, button {
     font-size: 13pt;
+}
+
+#content-wrapper {
+    background-color: rgb(98% 98% 98%) !important;
+    padding: 5mm;
+    padding-bottom: 5cm;
 }
 
 #header {
@@ -234,19 +239,12 @@ html {
     }
 }
 
-#footer-spacer {
-    height: 7cm
-}
-
 #footer {
     background: linear-gradient(to top, rgb(100, 30, 30), rgb(145, 43, 48));
     height: 4cm;
     color: #fff;
     font-family: Sans-serif;
     font-size: 12pt;
-    position: absolute;
-    left: 0;
-    right: 0;
     padding-left: 15mm;
     padding-top: 1cm;
     bottom: 0;
