@@ -17,21 +17,22 @@ items:
 
   - type: galaxy
     project: galaxy
-    title: Galaxy Image Analysis Project Accepted for the BioHackathon Europe 2025
+    title: Project on Image Analysis in Galaxy at the BioHackathon Europe 2025
     cover: /assets/bheu2025.jpg
     text: |
-      **June 2025.** The project submission lead by Dr. Kostrykin and entitled "Evolving FAIR image analysis in Galaxy for cross-domain and AI-ready applications" for the upcoming [BioHackathon Europe 2025](https://biohackathon-europe.org) has been accepted. The hackathon is organized by [ELIXIR](https://elixir-europe.org). Following the previous projects
+      **November 2025.** With the project entitled "Evolving FAIR image analysis in Galaxy for cross-domain and AI-ready applications" and lead by Dr. Kostrykin, it has been three years in a row that the community for image analysis in Galaxy succeeded with a project at the [BioHackathon Europe](https://biohackathon-europe.org): 
 
       - [Enhancing the image analysis community in Galaxy](https://osf.io/w8dsz) (2023, online participation)
       - [Development of FAIR image analysis workflows and training in Galaxy](https://osf.io/hbw6m_v1) (2024, nominated participant, Barcelona, Spain)
+      - [Evolving FAIR image analysis in Galaxy for cross-domain and AI-ready applications](https://github.com/elixir-europe/biohackathon-projects-2025/blob/main/9.md) (2025, project lead, Berlin, Germany)
 
-      this will be the third year in a row that a project focusing on image analysis in Galaxy will be held at the BioHackathon Europe, and the first year that Dr. Kostrykin will participate as a project lead.
+      The five-days hackathon is organized annualy by [ELIXIR](https://elixir-europe.org). Within the 2025 project, we have been able to align joint efforts from [Euro-BioImaging](https://www.eurobioimaging.eu), [OSCARS FIESTA](https://oscars-project.eu/projects/fair-image-analysis-across-sciences), and [OSCARS BIO-CODES](https://oscars-project.eu/projects/bio-codes-enhancing-ai-readiness-bioimaging-data-content-based-identifiers) to further advance the ecosystem for image analysis in Galaxy.
 
   - type: training
     project: galaxy
     title: Webinar Series on Image Analysis in Galaxy
     text: |
-      **Spring 2025.** We have delivered three webinars on image analysis in [Galaxy](https://galaxyproject.org). Our contributions for the [GloBIAS Bioimage Analysis Seminar Series](https://www.globias.org/activities/bia-seminar-series#h.8hkvvz3f30o8) and the [EMBL EBI Course on Microscopy Data Analysis](https://www.ebi.ac.uk/training/events/microscopy-data-analysis-2025/#vf-tabs__section--tab2) were attended by respectively about 50 and 40 scientists from across the globe. The GloBIAS webinar was concluded by an extensive Q&amp;A that is now available on the [Image.SC Forums](https://forum.image.sc/t/globias-bioimage-analysis-seminar-series-image-analysis-using-galaxy/109386). Our third contriubtion was for the [Euro-BioImaging Image Data Community Days 2025](https://www.eurobioimaging.eu/events/image-data-community-days) and had about 90 attendees from across Europe.
+      **April 2025.** This spring, we have delivered three webinars on image analysis in [Galaxy](https://galaxyproject.org). Our contributions for the [GloBIAS Bioimage Analysis Seminar Series](https://www.globias.org/activities/bia-seminar-series#h.8hkvvz3f30o8) and the [EMBL EBI Course on Microscopy Data Analysis](https://www.ebi.ac.uk/training/events/microscopy-data-analysis-2025/#vf-tabs__section--tab2) were attended by respectively about 50 and 40 scientists from across the globe. The GloBIAS webinar was concluded by an extensive Q&amp;A that is now available on the [Image.SC Forums](https://forum.image.sc/t/globias-bioimage-analysis-seminar-series-image-analysis-using-galaxy/109386). Our third contriubtion was for the [Euro-BioImaging Image Data Community Days 2025](https://www.eurobioimaging.eu/events/image-data-community-days) and had about 90 attendees from across Europe.
 
       <div class="youtube-thumbnail fluid-iframe" data-thumbnail="/assets/galaxy-webinars-spring-2025.jpg" data-title="Image Analysis using Galaxy by B. Serrano-Solano, A. Fouilloux, L. Kostrykin, R. Massei" data-logo="/assets/yt-globias.png"><iframe src="https://www.youtube-nocookie.com/embed/wAHOPT6lRV0?si=udjQ48FqQ-xHZ72A&amp;start=217&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
