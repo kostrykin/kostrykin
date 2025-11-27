@@ -1,11 +1,15 @@
 ul.photographs {
     padding: 0;
+    margin-right: -15mm;
+    margin-top: 3mm;
 }
 
 ul.photographs li.photograph {
     list-style-type: none;
     margin-top: 0.66em;
-    margin-bottom: 0.66em;
+    margin-bottom: 15mm;
+    margin-right: 15mm;
+    display: inline-block;
 }
 
 ul.photographs li.photograph .photograph-frame {
