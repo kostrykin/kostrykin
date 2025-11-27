@@ -245,8 +245,8 @@ html {
     font-family: Sans-serif;
     font-size: 12pt;
     position: absolute;
-    left: -1cm;
-    right: -1cm;
+    left: 0;
+    right: 0;
     padding-left: 15mm;
     padding-top: 1cm;
     bottom: 0;
@@ -318,6 +318,8 @@ html {
     max-width: 305mm;
     margin-left: auto;
     margin-right: auto;
+    text-overflow: clip;
+    overflow-x: hidden;
 }
 
 @-moz-document url-prefix() {
