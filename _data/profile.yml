@@ -73,6 +73,14 @@ affiliations:
 
 presentations:
 
+  - institution: Galaxy Community Conference
+    format: talk
+    title: 'Galaxy Image Analysis: A Decade of Development for Cell Microscopy Image Analysis and Beyond'
+    month: 6
+    year: 2026
+    venue: Clermont-Ferrand, France
+    project: galaxy
+
   - institution: European Galaxy Days
     format: invited talk
     title: 'Streamlining the User Experience for Reproducible Image Analysis in Galaxy'
