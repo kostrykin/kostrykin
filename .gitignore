@@ -5,3 +5,4 @@ _site
 vendor
 .*.swp
 /.env
+.DS_Store
