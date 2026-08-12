@@ -19,7 +19,7 @@ items:
     project: galaxy
     title: Talk at the Galaxy Community Conference 2026
     text: |
-      **June 2026.** We have contributed a talk on Galaxy Image Analysis for the Galaxy Community Conference 2026, that was held at the University Clermont Auvergne in Clermont-Ferrand (France) this year. The talk was entitled "Galaxy Image Analysis: A Decade of Development for Cell Microscopy Image Analysis and Beyond" and covered the highlights of ten years of development of Galaxy Image Analysis, that is a software suite for web-based image analysis of cell microscopy images, that started in 2016.
+      **June 2026.** We have contributed a talk on Galaxy Image Analysis for the [Galaxy Community Conference 2026](https://galaxyproject.org/events/gcc2026), that was held at the University Clermont Auvergne in Clermont-Ferrand (France) this year. The talk was entitled "Galaxy Image Analysis: A Decade of Development for Cell Microscopy Image Analysis and Beyond" and covered the highlights of ten years of development of Galaxy Image Analysis, that is a software suite for web-based image analysis of cell microscopy images, that started in 2016.
 
       The talk featured example workflows from cell microscopy research conducted with Galaxy Image Analysis (Föll et al. 2019, Liu et al. 2022, Wang et al. 2022) and included an example workflow for segmentation of anatomical structures from medical imaging. We also introduced the [Galaxy Image Analysis Auxilliary Library](https://github.com/bmcv/giatools) to a wider audience, which poses the technical backbone for a wide range of different high-dimensional image representations and image file formats.
 
