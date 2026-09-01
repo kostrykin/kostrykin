@@ -24,8 +24,8 @@ permalink: /software/
 
                 <div class="col-12 col-md-7 col-lg-8 item-main">
 
-                    <h5 class="card-title">{{ item.title }}</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">{{ item.subtitle | markdownify | replace: '<p>', '<p class="card-text">' }}</h5>
+                    <h4 class="card-title">{{ item.title }}</h4>
+                    <h5 class="card-subtitle mb-2 text-body-secondary">{{ item.subtitle | markdownify | replace: '<p>', '<p class="card-text">' }}</h5>
 
                     {{ item.text | markdownify | replace: '<p>', '<p class="card-text">' }}
 

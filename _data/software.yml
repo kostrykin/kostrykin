@@ -34,7 +34,7 @@ items:
       The software is publically available on [Galaxy Europe](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu/repos/imgteam/segmetrics/ip_segmetrics), [Bioconda](https://anaconda.org/bioconda/segmetrics), and [GitHub](https://github.com/BMCV/segmetrics). The documentation is available on [readthedocs.io](https://segmetrics.readthedocs.io).
 
   - title: SuperDSM
-    subtitle: Globally optimal cell segmentation using superadditivity and deformable shape models
+    subtitle: Cell segmentation using superadditivity and deformable shape models
     license: MIT
     sources:
       - github.com/BMCV/SuperDSM
@@ -51,7 +51,7 @@ items:
       The software is publically available on [Galaxy Europe](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu/repos/imgteam/superdsm/ip_superdsm), [Bioconda](https://anaconda.org/bioconda/superdsm), and [GitHub](https://github.com/BMCV/SuperDSM). The documentation is available on [readthedocs.io](https://superdsm.readthedocs.io).
 
   - title: repype
-    subtitle: Reproducible, efficient batch processing using pipelines for sustainable software experiments
+    subtitle: Reproducible & efficient batch processing for sustainable software experiments
     license: MIT
     sources:
       - github.com/kostrykin/repype
@@ -61,8 +61,7 @@ items:
     documentation:
       - repype.readthedocs.io
     text: |
-
-      The repype library provides a framework for reproducible and efficient batch processing to facilitate the sustainability of software experiments.
+      The repype library provides a framework for reproducible and efficient batch processing using pipelines to facilitate the sustainability of software experiments.
 
       The framework emerged as a by-product of the development of SuperDSM, which is a software pipeline for image segmentation. Later, it was also used for other image analyis pipelines (e.g., image registration and stitching).
 
