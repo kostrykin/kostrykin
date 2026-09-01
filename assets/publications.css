@@ -49,7 +49,7 @@ ul.publications li.publication .publication-proceedings-title {
 }
 
 ul.publications li.publication .publication-in-press {
-    font-style: italic;
+    font-style: normal;
 }
 
 ul.publications li.publication .publication-preprint-details {
