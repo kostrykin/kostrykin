@@ -1,3 +1,7 @@
+#content {
+    overflow-x: visible;
+}
+
 ul.publications,
 ul.notes {
     padding: 0;
