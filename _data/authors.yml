@@ -85,6 +85,126 @@ apichlmair:
   last_name: Pichlmair
 
 vldaothi:
-  name: V.L. Dao Thi
+  name: V. L. Dao Thi
   first_name: Viet Loan
   last_name: Dao Thi
+
+rmassei:
+  name: R. Massei
+  first_name: Riccardo
+  last_name: Massei
+
+dchiang:
+  name: D. Chiang
+  first_name: Diana
+  last_name: Chiang
+
+twollmann:
+  name: T. Wollmann
+  first_name: Thomas
+  last_name: Wollmann
+
+jmburel:
+  name: J.-M. Burel
+  first_name: Jean-Marie
+  last_name: Burel
+
+dltabernero:
+  name: D. L. Tabernero
+  first_name: David Lopez
+  last_name: Tabernero
+
+ysun:
+  name: Y. Sun
+  first_name: Yi
+  last_name: Sun
+
+qgao:
+  name: qgao
+  first_name: Qi
+  last_name: Gao
+
+mwpaul:
+  name: M. W. Paul
+  first_name: Maarten W.
+  last_name: Paul
+
+pvidem:
+  name: P. Videm
+  first_name: Pavankumar
+  last_name: Videm
+
+cwatson:
+  name: C. Watson
+  first_name: Cameron
+  last_name: Watson
+
+dfrancobarranco:
+  name: D. Franco-Barranco
+  first_name: Daniel
+  last_name: Franco-Barranco
+
+akumar:
+  name: A. Kumar
+  first_name: Anup
+  last_name: Kumar
+
+ngoue:
+  name: N. Goué
+  first_name: Nadia
+  last_name: Goué
+
+rtkoopaei:
+  name: R. T. Koopaei
+  first_name: Reyhaneh Tavakoli
+  last_name: Koopaei
+
+vulman:
+  name: V. Ulman
+  first_name: Vladimír
+  last_name: Ulman
+
+kjumah:
+  name: K. Jum'ah
+  first_name: Khaled
+  last_name: Jum'ah
+
+kpoterlowicz:
+  name: K. Poterlowicz
+  first_name: Krzysztof
+  last_name: Poterlowicz
+
+metzrodt:
+  name: M. Etzrodt
+  first_name: Martin
+  last_name: Etzrodt
+
+amunozbarrutia:
+  name: A. Muñoz-Barrutia
+  first_name: Arrate
+  last_name: Muñoz-Barrutia
+
+seledevedec:
+  name: S. E. Le Dévédec
+  first_name: Sylvia E.
+  last_name: Le Dévédec
+
+jmoore:
+  name: J. Moore
+  first_name: Josh
+  last_name: Moore
+
+jgoecks:
+  name: J. Goecks
+  first_name: Jeremy
+  last_name: Goecks
+
+bgruening:
+  name: B. Gruening
+  first_name: Bjoern
+  last_name: Gruening
+
+bserranosolano:
+  name: B. Serrano-Solano
+  first_name: Beatriz
+  last_name: Serrano-Solano
