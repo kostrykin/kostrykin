@@ -1,0 +1,90 @@
+---
+title: Software
+nav_software: active
+layout: default
+permalink: /software/
+---
+
+<link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/assets/software.css?{{ timestamp }}">
+
+<div class="col-12">
+
+<p class="lead serif-text mb-5">
+    {{ site.data.software.introduction | markdownify | remove: '<p>' | remove: '</p>' }}
+</p>
+
+{% for item in site.data.software.items %}
+
+    <div class="card mb-4">
+        {% if item.cover %}
+            <img src="{{ item.cover }}" class="card-img-top">
+        {% endif %}
+        <div class="card-body col-12 row gx-1">
+            <div class="col-12 row">
+
+                <div class="col-8 item-main">
+
+                <h5 class="card-title">{{ item.title }}</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">{{ item.subtitle | markdownify | replace: '<p>', '<p class="card-text">' }}</h5>
+                    {{ item.text | markdownify | replace: '<p>', '<p class="card-text">' }}
+                </div>
+                <div class="col-4 item-meta">
+                    {% if item.license %}
+                        <p><b>License:</b> {{ item.license }}</p>
+                    {% endif %}
+                    {% if item.sources %}
+                        <p>
+                            <b>Sources:</b>
+                            {% for s in item.sources %}
+                            <a href="https://{{ s }}">{{ s }}</a>{% unless forloop.last %},{% endunless %}
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                    {% if item.packages %}
+                        <p>
+                            <b>Package{% if item.packages.size > 1 %}s{% endif %}:</b>
+                            {% for p in item.packages %}
+                            <a href="https://{{ p }}">{{ p }}</a>{% unless forloop.last %},{% endunless %}
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                    {% if item.documentation %}
+                        <p>
+                            <b>Documentation:</b>
+                            {% for d in item.documentation %}
+                            <a href="https://{{ d }}">{{ d }}</a>{% unless forloop.last %},{% endunless %}
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                    {% if item.publications %}
+                        <p><b>Publications:</b></p>
+                        <ul>{% for item_publication in item.publications %}
+                            {% assign p = site.publications | where_exp: 'publication', 'publication.slug == item_publication' | first %}
+                            <li>
+                                <a href="/publications#{{ p.slug }}">
+                                    {{ p.title }}
+                                    ({% include publication-authors.html authors=p.authors n_max=3 %}{{ p.year }})
+                                </a>
+                            </li>
+                        {% endfor %}</ul>
+                    {% endif %}
+                </div>
+    
+                {% if item.images %}
+                    <div class="row mt-3">
+                    {% for img in item.images %}
+                        <div class="col-6">
+                            <img class="img-fluid border rounded" src="{{ img }}">
+                        </div>
+                    {% endfor %}
+                    </div>
+                {% endif %}
+    
+            </div>
+        </div>
+    </div>
+
+{% endfor %}
+
+</div>
+

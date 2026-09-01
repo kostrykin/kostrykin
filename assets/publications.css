@@ -33,10 +33,6 @@ ul.publications li.publication a,
 ul.notes li.note a {
 }
 
-ul.publications li.publication .publication-authors .publication-author:not(:last-child)::after {
-    content: ', ';
-}
-
 ul.publications li.publication .publication-title {
 }
 

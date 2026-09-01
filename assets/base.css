@@ -347,3 +347,7 @@ math:not(.ma-block) {
     margin-bottom: -1em;
 }
 
+.publication-author {
+    text-wrap: nowrap;
+}
+

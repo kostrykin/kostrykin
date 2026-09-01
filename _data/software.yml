@@ -1,0 +1,93 @@
+introduction: |
+  Below is a list of the publically available software tools and packages that **Dr. Leonid Kostrykin** has written or contributed to.
+
+items:
+
+  - title: Galaxy Image Analysis
+    subtitle: FAIR image analysis of cell microscopy images
+    license: MIT
+    sources:
+      - github.com/BMCV/galaxy-image-analysis
+    packages:
+      - hub.docker.com/r/kostrykin/galaxy-image-analysis/tags
+    publications:
+      - kostrykin2026
+    text: |
+      Galaxy Image Analysis is a software suite for auomated analysis of cell microscopy images.
+
+      The software is publically available on [Galaxy Europe](https://github.com/bmcv/galaxy-image-analysis#list-of-tools-on-galaxy-europe), [DockerHub](https://hub.docker.com/r/kostrykin/galaxy-image-analysis/tags), and [GitHub](https://github.com/BMCV/galaxy-image-analysis).
+
+      <div class="youtube-thumbnail fluid-iframe" data-thumbnail="/assets/gcc-2026.png" data-title="Galaxy Image Analysis: A Decade of Development for Cell Microscopy Image Analysis and Beyond" data-logo="/assets/yt-GalaxyProject.png"><iframe src="https://www.youtube-nocookie.com/embed/e10XFwUu1vc?si=fKmOkrXn8oRT9J5N&amp;start=14699&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+  - title: segmetrics
+    subtitle: Toolkit for quantitative evaluation of image segmentation performance
+    license: MIT
+    sources:
+      - github.com/BMCV/segmetrics
+    packages:
+      - anaconda.org/bioconda/segmetrics
+    documentation:
+      - segmetrics.readthedocs.io
+    text: |
+      The segmetrics software package provides easy-to-use tools for evaluation of the performance of segmentation methods in biomedical image analysis and beyond, and to fasciliate the comparison of different methods by providing standardized implementations. The software supports 2-D image data and provides both a command-line interface and a Python API.
+
+      The software is publically available on [Galaxy Europe](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu/repos/imgteam/segmetrics/ip_segmetrics), [Bioconda](https://anaconda.org/bioconda/segmetrics), and [GitHub](https://github.com/BMCV/segmetrics). The documentation is available on [readthedocs.io](https://segmetrics.readthedocs.io).
+
+  - title: SuperDSM
+    subtitle: Globally optimal cell segmentation using superadditivity and deformable shape models
+    license: MIT
+    sources:
+      - github.com/BMCV/SuperDSM
+    packages:
+      - anaconda.org/bioconda/superdsm
+    documentation:
+      - superdsm.readthedocs.io
+    publications:
+      - kostrykin2023
+      - kostrykin2024
+    text: |
+      SuperDSM is a globally optimal segmentation method based on superadditivity and deformable shape models for cell nuclei in fluorescence microscopy images and beyond.
+
+      The software is publically available on [Galaxy Europe](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu/repos/imgteam/superdsm/ip_superdsm), [Bioconda](https://anaconda.org/bioconda/superdsm), and [GitHub](https://github.com/BMCV/SuperDSM). The documentation is available on [readthedocs.io](https://superdsm.readthedocs.io).
+
+  - title: repype
+    subtitle: Reproducible, efficient batch processing using pipelines for sustainable software experiments
+    license: MIT
+    sources:
+      - github.com/kostrykin/repype
+    packages:
+      - pypi.org/p/repype
+      - anaconda.org/conda-forge/repype
+    documentation:
+      - repype.readthedocs.io
+    text: |
+
+      The repype library provides a framework for reproducible and efficient batch processing to facilitate the sustainability of software experiments.
+
+      The framework emerged as a by-product of the development of SuperDSM, which is a software pipeline for image segmentation. Later, it was also used for other image analyis pipelines (e.g., image registration and stitching).
+
+      The framework is publically available as a Python module on [PyPI](http://pypi.org/p/repype), [conda-forge](https://anaconda.org/conda-forge/repype), and [GitHub](https://github.com/kostrykin/repype). The documentation is available on [readthedocs.io](https://repype.readthedocs.io).
+
+        <div class="youtube-thumbnail fluid-iframe" data-thumbnail="/assets/eubi2025-repype.jpg" data-title="Sustainable Prototyping for Software Experiments| FAIR workflows session" data-logo="/assets/yt-EuroBioImagingCommunication.png"><iframe src="https://www.youtube-nocookie.com/embed/PLqR8CyU8_4?si=cUnBoA1dPFIryjux&amp;enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+  - title: LibCarna
+    subtitle: Real-time visualization of 3-D images "just as simple" as for 2-D images
+    license: MIT
+    sources:
+      - github.com/kostrykin/LibCarna
+      - github.com/kostrykin/LibCarna-Python
+    packages:
+      - anaconda.org/bioconda/libcarna
+      - anaconda.org/bioconda/libcarna-python
+    documentation:
+      - kostrykin.github.io/LibCarna/html
+      - libcarna.readthedocs.io
+    images:
+      - /assets/libcarna-mip.png
+      - /assets/libcarna-dvr.gif
+    text: |
+      LibCarna is an attempt to make the visualization of 3D image data in Jupyter Notebooks just as simple as it is for 2D images. It was developed with an emphasis on simplicity and flexibility. Under the hood, LibCarna is implemented in C++ using efficient OpenGL while also supporting headless rendering using EGL. Python bindings are provided.
+
+      The project started off as [Carna](https://github.com/RWTHmediTEC/Carna) in 2010 at the Chair of Medical Engineering, RWTH Aachen, and was designed specifically for applications in medical imaging. It was discontinued in 2015/16. LibCarna is a fork of Carna that was created in 2021, aiming at a wider range of applications by providing classes for scientific visualization of biomedical data and beyond. 
+
+      The library (LibCarna) and its Python bindings (LibCarna-Python) are publically available as pre-built binary packages on Bioconda ([LibCarna](https://anaconda.org/bioconda/libcarna), [LibCarna-Python](https://anaconda.org/bioconda/libcarna-python)). LibCarna also provides CMake bindings. The sources are available on GitHub ([LibCarna](https://github.com/kostrykin/LibCarna), [LibCarna-Python](https://github.com/kostrykin/LibCarna-Python)). Documentation is also available ([LibCarna](https://kostrykin.github.io/LibCarna/html), [LibCarna-Python](https://libcarna.readthedocs.io)).
