@@ -15,6 +15,12 @@ icons:
 
 items:
 
+  - type: paper
+    project: galaxy
+    publication: kostrykin2026
+    text: |
+      **September 2026.** Our article "Bioimage Management and Analysis in Galaxy: Tools, Workflows, Training, and Community Practices" has been published in the Journal of Microscopy (Wiley). The article describes Galaxy as a computational workbench for bioimage data management and analysis and the community practices that have emerged in the past years.
+
   - type: galaxy
     project: galaxy
     title: Talk at the Galaxy Community Conference 2026
