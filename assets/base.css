@@ -347,7 +347,8 @@ math:not(.ma-block) {
     margin-bottom: -1em;
 }
 
-.publication-author {
+.publication-author,
+.publication-etal {
     text-wrap: nowrap;
 }
 

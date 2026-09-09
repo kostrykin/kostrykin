@@ -178,7 +178,7 @@ function updateProjectFilters(toggle) {
                 {% assign p = site.publications | where_exp: 'publication', 'publication.slug == item.publication' | first %}
                 <h5 class="card-title"><a href="/publications#{{ p.slug }}">{{ p.title }}</a></h5>
                 <h6 class="card-subtitle mb-2 text-body-secondary">
-                    {% include publication-authors.html authors=p.authors %}
+                    {% include publication-authors.html authors=p.authors n_max=5 %}
                 </h6>
                 <p class="card-text">
                     {% capture pstr %}
