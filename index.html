@@ -152,9 +152,10 @@ function updateProjectFilters(toggle) {
 
 <div class="col-12 col-xl-8" id="profile-main">
 
-<p class="lead serif-text mb-5">
+<p class="lead serif-text">
     {{ site.data.profile.introduction | markdownify | remove: '<p>' | remove: '</p>' }}
 </p>
+<p class="d-none d-xl-block mb-1">&nbsp;</p>
 
 {% for item in site.data.news.items %}
 
